@@ -263,8 +263,9 @@ footer .icon-social a:hover {
   border-radius: 0;
   padding: 10px 40px;
   border: 2px solid transparent;
-  width: 50%;
   margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 250px;
 }
 
 .btn-inscription:hover {
@@ -295,13 +296,11 @@ footer .icon-social a:hover {
 }
 
 .hero-title--primary-2,
-.hero-title--secondary-2,
-.hero-title--third-3 {
+.hero-title--secondary-2 {
   font-size: 1.8rem!important;
 }
 
-.hero-title--secondary-2,
-.hero-title--third-3 {
+.hero-title--secondary-2 {
   font-size: 1.4rem!important;
 }
 
@@ -312,12 +311,16 @@ footer .icon-social a:hover {
   text-shadow: black 0.1em 0.1em 0.2em
 }
 
-.hero-title--third,
-.hero-title--third-3 {
-  text-align: right;
-  margin-bottom: 4rem;
-  color: #fff;
-  text-align: left;
-  text-shadow: black 0.1em 0.1em 0.2em
+.hero-title--primary,
+.hero-title--secondary {
+  font-size: 4rem!important;
 }
 
+.hero-title--primary-2,
+.hero-title--secondary-2 {
+  font-size: 2rem!important;
+}
+
+.hero-title--secondary-2 {
+  margin-bottom: 4rem;
+}
