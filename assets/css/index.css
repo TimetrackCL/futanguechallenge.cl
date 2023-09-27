@@ -60,6 +60,8 @@
 
 .text-green-light-secondary { color: #bdc46f; }
 
+.text-white { color: #ffffff; }
+
 .h-100 { height: 100%; }
 
 .deg-white { width: 100%; height: 20px; background: white; background: -moz-linear-gradient(top, white 0%, #f8f8f8 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(100%, #f8f8f8)); background: -webkit-linear-gradient(top, white 0%, #f8f8f8 100%); background: -o-linear-gradient(top, white 0%, #f8f8f8 100%); background: -ms-linear-gradient(top, white 0%, #f8f8f8 100%); background: linear-gradient(to bottom, white 0%, #f8f8f8 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0 ); }
@@ -98,7 +100,7 @@ header img { max-height: 100vh;}
 #info-general { margin-top: 100px; }
 #info-general .col-info-date { padding-top: 4rem; }
 #info-general small.date { font-size: 1.2rem; letter-spacing: 0; line-height: 43px; }
-#info-general img.principal { max-width: 80%; transform: rotate(-10deg); -webkit-box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75); -moz-box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75); box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75); }
+#info-general img.principal { max-width: 80%; transform: rotate(-10deg); -webkit-box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75); -moz-box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75); box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75); border: 8px double #fff; }
 #info-general .btn-info-futangue { color: #9dab13; }
 #info-general .btn-info-futangue:hover { text-decoration: none; color: #616729; }
 
@@ -195,6 +197,11 @@ footer a.contact:hover { color: #9dab13; text-decoration: none; }
   border-color: transparent!important;
 }
 
+.welcu_embed #wlc-table-tickets th {
+  text-transform: uppercase;
+  font-weight: bold!important;
+}
+
 .welcu_embed #wlc-table-tickets tbody td{
   padding: 0;
 }
@@ -219,8 +226,98 @@ footer a.contact:hover { color: #9dab13; text-decoration: none; }
   z-index: 98;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+.hero--wrapper h1 {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.hero--wrapper img {
+  max-width: 300px;
+}
+
+.hero--wrapper .hero-logo-2 {
+  width: 200px!important;
+}
+
+footer .icon-social a {
+  border: 1px solid transparent;
+  font-size: 2rem;
+}
+
+footer .icon-social a:hover {
+  border: 1px solid transparent;
+  font-size: 2rem;
+}
+
+.btn-inscription {
+  background-color: #9dab13;
+  color: #fff;
+  border-radius: 0;
+  padding: 10px 40px;
+  border: 2px solid transparent;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.btn-inscription:hover {
+  background-color: #fff;
+  color: #616729;
+  border: 2px solid #9dab13;
+}
+
+.font-small {
+  font-size: 1.5rem;
+  letter-spacing: .5px;
+}
+
+
+.hero-logo_box {
+  display: flex;
+}
+
+.hero-title--primary,
+.hero-title--primary-2 {
+  text-align: left;
+  margin-top: 3rem;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.hero-title--primary-2 {
+  margin-top: 10rem;
+}
+
+.hero-title--primary-2,
+.hero-title--secondary-2,
+.hero-title--third-3 {
+  font-size: 1.8rem!important;
+}
+
+.hero-title--secondary-2,
+.hero-title--third-3 {
+  font-size: 1.4rem!important;
+}
+
+.hero-title--secondary,
+.hero-title--secondary-2 {
+  text-align: left;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.hero-title--third,
+.hero-title--third-3 {
+  text-align: right;
+  margin-bottom: 4rem;
+  color: #fff;
+  text-align: left;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
 
