@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?99105k');
+  src:  url('../fonts/icomoon.eot?99105k#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?99105k') format('truetype'),
+    url('../fonts/icomoon.woff?99105k') format('woff'),
+    url('../fonts/icomoon.svg?99105k#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hojita-chica2-12 .path1:before {
+  content: "\e902";
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path3:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path4:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path5:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path6:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path7:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path8:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path9:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path10:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path11:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path12:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path13:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path14:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path15:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path16:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path17:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path18:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path19:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path20:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path21:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path22:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path23:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path24:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path25:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path26:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path27:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path28:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-hojita-chica2-12 .path29:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(157, 171, 19);
+}
+.icon-hojita-chica2-12 .path30:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(157, 171, 31);
+}
+.icon-ramita:before {
+  content: "\e900";
+  color: #9dab13;
+}
+.icon-futangue:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-contact:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-document:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-circuit:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-information:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-home:before {
+  content: "\e909";
+  color: #fff;
+}

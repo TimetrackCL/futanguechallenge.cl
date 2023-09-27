@@ -1,0 +1,562 @@
+/********\
+* COLORS *
+\********/
+$black: rgb(0, 0, 0);
+$green-dark-primary: rgb(49, 52, 21);
+$green-dark-secondary: rgb(97, 103, 41);
+$green-light-primary: rgb(157, 171, 19);
+$green-light-secondary: rgb(189, 196, 111);
+
+/********\
+* FONTS  *
+\********/
+$oswald: 'Oswald', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+@font-face {
+    font-family: 'agendamediumultracondensed';
+    src: url('../fonts/agenda-mediumultracondensed-webfont.woff2') format('woff2'),
+         url('../fonts/agenda-mediumultracondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'agendamedium_italic';
+    src: url('../fonts/agenda-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/agenda-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'agendamediumextracondensed';
+    src: url('../fonts/agenda-mediumextracondensed-webfont.woff2') format('woff2'),
+         url('../fonts/agenda-mediumextracondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'agendamediumcondensed';
+    src: url('../fonts/agenda-mediumcondensed-webfont.woff2') format('woff2'),
+         url('../fonts/agenda-mediumcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'agendamedium';
+    src: url('../fonts/agenda-medium-webfont.woff2') format('woff2'),
+         url('../fonts/agenda-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'agendaboldultracondensed';
+    src: url('../fonts/agenda-boldultracondensed-webfont.woff2') format('woff2'),
+         url('../fonts/agenda-boldultracondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'agendaboldextracondensed';
+    src: url('../fonts/agenda-boldextracondensed-webfont.woff2') format('woff2'),
+         url('../fonts/agenda-boldextracondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'agendaboldcondensed';
+    src: url('../fonts/agenda-boldcondensed-webfont.woff2') format('woff2'),
+         url('../fonts/agenda-boldcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'agendabold';
+    src: url('../fonts/agenda-bold-webfont.woff2') format('woff2'),
+         url('../fonts/agenda-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*******************\
+* Generic Functions *
+\*******************/
+.font-oswald {
+  font-family: $oswald;
+}
+.font-raleway {
+  font-family: $raleway;
+}
+.font-agenda-medium-ultra-condensed {
+  font-family: 'agendamediumultracondensed';
+}
+.font-agenda-medium-italic {
+  font-family: 'agendamedium_italic';
+}
+.font-agenda-medium-extra-condensed {
+  font-family: 'agendamediumextracondensed';
+}
+.font-agenda-medium-condensed {
+  font-family: 'agendamediumcondensed';
+}
+.font-agenda-medium {
+  font-family: 'agendamedium';
+}
+.font-agenda-bold-ultra-condensed {
+  font-family: 'agendaboldultracondensed';
+}
+.font-agenda-bold-extra-condensed {
+  font-family: 'agendaboldextracondensed';
+}
+.font-agenda-bold-condensed {
+  font-family: 'agendaboldcondensed';
+}
+.font-agenda-bold {
+  font-family: 'agendabold';
+}
+
+.bg-black {
+  background-color: $black;
+}
+.bg-green-dark-primary {
+  background-color: $green-dark-primary;
+}
+.bg-green-dark-secondary {
+  background-color: $green-dark-secondary;
+}
+.bg-green-light-primary {
+  background-color: $green-light-primary;
+}
+.bg-green-light-secondary {
+  background-color: $green-light-secondary;
+}
+
+.text-black {
+  color: $black;
+}
+.text-green-dark-primary {
+  color: $green-dark-primary;
+}
+.text-green-dark-secondary {
+  color: $green-dark-secondary;
+}
+.text-green-light-primary {
+  color: $green-light-primary;
+}
+.text-green-light-secondary {
+  color: $green-light-secondary;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.deg-black {
+  background: rgba(0,0,0,1);
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,0.93) 24%, rgba(255,255,255,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(18%, rgba(0,0,0,1)), color-stop(24%, rgba(0,0,0,0.93)), color-stop(100%, rgba(255,255,255,0)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,0.93) 24%, rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,0.93) 24%, rgba(255,255,255,0) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,1) 18%, rgba(0,0,0,0.93) 24%, rgba(255,255,255,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,1) 18%, rgba(0,0,0,0.93) 24%, rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=0 );
+}
+
+img.ramita {
+  width: 60px;
+}
+
+.h-123 {
+  height: 123px;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: 'agendabold';
+  text-transform: uppercase;
+  letter-spacing: -0.12rem;
+}
+
+h2 {
+  color: $green-light-primary;
+  font-size: 48px;
+  font-family: 'agendabold';
+  text-transform: uppercase;
+}
+
+/**************\
+* Custom Style *
+\**************/
+body {
+  background-color: #f8f8f8;
+  font-family: 'Agenda';
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#header {
+  img {
+    height: 100px;
+  }
+  .custom-navbar-nav {
+    margin-right: 0;
+
+    li {
+      a.nav-link {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 20px;
+
+        &:before {
+          font-size: 30px;
+        }
+        
+        &:hover {
+          color: $green-light-primary;
+          &:hover:before {
+              color: $green-light-primary;
+            }
+        }
+
+        .span-a {
+          display: block;
+          font-family: 'agendabold' !important;
+        }
+      }
+
+      &.active {
+        a {
+          color: $green-light-primary;
+
+          &:before {
+            color: $green-light-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+  height: 100vh;
+
+  .welcome { 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100vh;
+
+    .row { 
+      height: 100vh !important; 
+    }
+  }
+  // .carousel-inner img {
+  //     width: 100%;
+  //     height: 100vh;
+  //     object-fit: cover;
+  //     filter: grayscale(70%);
+  // }
+  // .hero {
+  //   position: relative;
+  // }
+  
+  // .time {
+  //   height: 100px;
+  //   .ti {
+  //     width: 20%;
+
+  //     span {
+  //       font-size: 3rem;
+  //       line-height: 0.85em;
+  //     }
+
+  //     small {
+  //       font-size: 0.8rem;
+  //       font-weight: bold;
+  //       text-transform: uppercase;
+  //       color: rgba(255, 255, 255, 0.5);
+  //       letter-spacing: 5px;
+  //     }
+  //   }
+  // }
+
+  // .add {
+  //   a {
+  //     color: #fff;
+  //     font-size: 3rem;
+  //     line-height: 0.85em;
+  //     text-transform: uppercase;
+
+  //     &:hover {
+  //       text-decoration: none;
+  //     }
+  //   }
+  // }
+}
+
+#slideHero {
+  position: relative;
+  height: 100vh;
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+  }
+}
+
+#info-general {
+  margin-top: 100px;
+  small.date {
+      font-size: 1.2rem;
+      letter-spacing: 0;
+      line-height: 2.5rem;
+  }
+
+  img.principal {
+      max-width: 80%;
+      transform: rotate(-10deg);
+      -webkit-box-shadow: -22px -9px 73px -9px rgba(0,0,0,0.75);
+      -moz-box-shadow: -22px -9px 73px -9px rgba(0,0,0,0.75);
+      box-shadow: -22px -9px 73px -9px rgba(0,0,0,0.75);
+  }
+}
+
+#distances {
+  button {
+    font-family: 'agendabold';
+    color: #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    border: 1px solid transparent;
+    
+    small {
+      font-size: 18px;
+    }
+
+    span.span-hero {
+      border-top: 5px solid $green-light-primary;
+      border-bottom: 5px solid $green-light-primary;
+      font-size: 100px;
+    }
+
+    span.span-bot {
+      font-size: 25px;
+    }
+
+    span.span-bot-k60 {
+      font-size: 25px; 
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      border: 1px solid $green-light-primary;
+      color: $green-light-secondary;
+
+      small {
+        font-size: 20px;
+      }
+
+      span.span-hero {
+        border-top: 5px solid $green-light-secondary;
+        border-bottom: 5px solid $green-light-secondary;
+        font-size: 100px;
+      }
+
+      span.span-bot {
+        font-size: 40px;
+      }
+
+      span.span-bot-k60 {
+        font-size: 40px; 
+      }
+    }
+  }
+}
+
+#sold-tickets {
+  margin-top: 100px;
+
+  ul {
+    li {
+        list-style-type: none;
+    }
+  }
+
+  table {
+    font-weight: bold;
+    
+    thead {
+      th {
+        &.th-active {
+          border-top: 20px solid $green-light-primary;
+          border-bottom: 1px solid $green-light-primary;
+        } 
+      }
+    }
+
+    tbody {
+      td {
+        &.td-active {
+          border-bottom: 1px solid $green-light-primary;
+        }
+
+        &.td-active-end {
+          border-bottom: 20px solid $green-light-primary;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+      }
+    }
+  }
+
+  a {
+    background-color: $green-light-primary;
+    color: #fff;
+    width: 40%;
+    
+    &:hover {
+      color: #fff;
+      background-color: $green-dark-secondary;
+      font-weight: bold;
+    }
+  }
+}
+
+footer {
+
+  .icon-social {
+    a {
+      color: #fff;
+      border: 2px solid #fff;
+      
+      &:hover {
+        color:$green-light-primary;
+        border: 2px solid $green-light-primary;
+      }
+    }
+  }
+
+  img {
+    height: 100px;
+  }
+  
+  a.contact {
+      color: #fff;
+      
+      &:hover {
+        color:$green-light-primary;
+        text-decoration: none;
+      }
+    }
+
+}
+
+#montana {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 38px;
+  background: url('../assets/img/patron/mountains_1.png') repeat-x;
+  left: 0;
+  z-index: 99;
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  img.ramita {
+    width: 60px;
+  }
+
+  .h-123 {
+    height: 123px;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-family: 'agendabold';
+    text-transform: uppercase;
+    letter-spacing: -0.12rem;
+  }
+
+  h2 {
+    color: $green-light-primary;
+    font-size: 48px;
+    font-family: 'agendabold';
+    text-transform: uppercase;
+  }
+
+  #info-general {
+    small.date {
+    }
+  }
+
+  #distances {
+    button {
+      
+      small {
+        font-size: 20px;
+      }
+
+      span.span-hero {
+        border-top: 5px solid $green-light-primary;
+        border-bottom: 5px solid $green-light-primary;
+        font-size: 100px;
+      }
+
+      span.span-bot {
+        font-size: 40px;
+      }
+
+      span.span-bot-k60 {
+        font-size: 40px; 
+      }
+
+      &:hover {
+        border: 1px solid $green-light-primary;
+        color: $green-light-secondary;
+
+        small {
+          font-size: 20px;
+        }
+
+        span.span-hero {
+          border-top: 5px solid $green-light-secondary;
+          border-bottom: 5px solid $green-light-secondary;
+          font-size: 100px;
+        }
+
+        span.span-bot {
+          font-size: 40px;
+        }
+
+        span.span-bot-k60 {
+          font-size: 40px; 
+        }
+      }
+    }
+  }
+}

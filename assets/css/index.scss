@@ -1,0 +1,741 @@
+/********\
+* COLORS *
+\********/
+$black: rgba(0, 0, 0, 0.6);
+$green-dark-primary: rgb(49, 52, 21);
+$green-dark-secondary: rgb(97, 103, 41);
+$green-light-primary: rgb(157, 171, 19);
+$green-light-secondary: rgb(189, 196, 111);
+
+/********\
+* FONTS  *
+\********/
+$oswald: 'Oswald', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+@font-face {
+  font-family: 'agendamediumultracondensed';
+  src: url('../fonts/agenda-mediumultracondensed-webfont.woff2') format('woff2'),
+       url('../fonts/agenda-mediumultracondensed-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'agendamedium_italic';
+  src: url('../fonts/agenda-mediumitalic-webfont.woff2') format('woff2'),
+       url('../fonts/agenda-mediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'agendamediumextracondensed';
+  src: url('../fonts/agenda-mediumextracondensed-webfont.woff2') format('woff2'),
+       url('../fonts/agenda-mediumextracondensed-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'agendamediumcondensed';
+  src: url('../fonts/agenda-mediumcondensed-webfont.woff2') format('woff2'),
+       url('../fonts/agenda-mediumcondensed-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'agendamedium';
+  src: url('../fonts/agenda-medium-webfont.woff2') format('woff2'),
+       url('../fonts/agenda-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'agendaboldultracondensed';
+  src: url('../fonts/agenda-boldultracondensed-webfont.woff2') format('woff2'),
+       url('../fonts/agenda-boldultracondensed-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'agendaboldextracondensed';
+  src: url('../fonts/agenda-boldextracondensed-webfont.woff2') format('woff2'),
+       url('../fonts/agenda-boldextracondensed-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'agendaboldcondensed';
+  src: url('../fonts/agenda-boldcondensed-webfont.woff2') format('woff2'),
+       url('../fonts/agenda-boldcondensed-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'agendabold';
+  src: url('../fonts/agenda-bold-webfont.woff2') format('woff2'),
+       url('../fonts/agenda-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*******************\
+* Generic Functions *
+\*******************/
+.font-oswald {
+  font-family: $oswald;
+}
+.font-raleway {
+  font-family: $raleway;
+}
+.font-agenda-medium-ultra-condensed {
+  font-family: 'agendamediumultracondensed';
+}
+.font-agenda-medium-italic {
+  font-family: 'agendamedium_italic';
+}
+.font-agenda-medium-extra-condensed {
+  font-family: 'agendamediumextracondensed';
+}
+.font-agenda-medium-condensed {
+  font-family: 'agendamediumcondensed';
+}
+.font-agenda-medium {
+  font-family: 'agendamedium';
+}
+.font-agenda-bold-ultra-condensed {
+  font-family: 'agendaboldultracondensed';
+}
+.font-agenda-bold-extra-condensed {
+  font-family: 'agendaboldextracondensed';
+}
+.font-agenda-bold-condensed {
+  font-family: 'agendaboldcondensed';
+}
+.font-agenda-bold {
+  font-family: 'agendabold';
+}
+
+.bg-black {
+  background-color: $black;
+}
+.bg-black-strong {
+  background-color: #000;
+}
+.bg-green-dark-primary {
+  background-color: $green-dark-primary;
+}
+.bg-green-dark-secondary {
+  background-color: $green-dark-secondary;
+}
+.bg-green-light-primary {
+  background-color: $green-light-primary;
+}
+.bg-green-light-secondary {
+  background-color: $green-light-secondary;
+}
+
+.text-black {
+  color: $black;
+}
+.text-green-dark-primary {
+  color: $green-dark-primary;
+}
+.text-green-dark-secondary {
+  color: $green-dark-secondary;
+}
+.text-green-light-primary {
+  color: $green-light-primary;
+}
+.text-green-light-secondary {
+  color: $green-light-secondary;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.deg-white {
+  width: 100%;
+  height: 20px;
+  background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(248,248,248,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0 );
+}
+
+img.ramita {
+  width: 60px;
+}
+
+.h-123 {
+  height: 123px;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: 'agendabold';
+  text-transform: uppercase;
+  letter-spacing: -0.12rem;
+}
+
+h2 {
+  color: $green-light-primary;
+  font-size: 48px;
+  font-family: 'agendabold';
+  text-transform: uppercase;
+}
+
+/**************\
+* Custom Style *
+\**************/
+body {
+  background-color: #f8f8f8;
+  font-family: 'Agenda';
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  
+  img {
+    max-height: 100vh;
+    z-index: 2;
+  }
+}
+
+#montana {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 30px;
+  background: url('../img/patron/mountains_1.png') repeat-x;
+  left: 0;
+  z-index: 99;
+}
+
+#nav-mobile {
+  ul.navbar-nav {
+    li.nav-item {
+      a.nav-link {
+        font-family: 'agendabold' !important;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 17px;
+        
+        &:before {
+          top: 5px;
+          font-size: 17px;
+        }
+
+        &.deactive {
+          color: rgba(255, 255, 255, 0.6);
+
+          &:before {
+            color: rgba(255, 255, 255, 0.6);
+          }
+
+          &:hover {
+            color: rgba(255, 255, 255, 0.6);
+            &:hover:before {
+              color: rgba(255, 255, 255, 0.6);
+            }
+          }
+        }
+      }
+
+      &:hover {
+        background-color: $green-light-primary;
+      }
+    }
+  }
+}
+
+#home {
+  height: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+#slideHero { 
+  position: relative;
+  height: 100vh;
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+  }
+}
+
+#info-general {
+  margin-top: 100px;
+  .col-info-date {
+    padding-top: 4rem;
+  }
+  small.date {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    line-height: 43px;
+  }
+  img.principal {
+    max-width: 80%;
+    transform: rotate(-10deg);
+    -webkit-box-shadow: -22px -9px 73px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -22px -9px 73px -9px rgba(0,0,0,0.75);
+    box-shadow: -22px -9px 73px -9px rgba(0,0,0,0.75);
+  }
+
+  .btn-info-futangue {
+    color: $green-light-primary;
+
+    &:hover {
+      text-decoration: none;
+      color: $green-dark-secondary;
+    }
+  }
+}
+
+#sponsor {
+  .col-sponsor {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+
+#distances {
+  position: relative;
+  
+  button {
+    font-family: 'agendabold';
+    color: #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    border: 1px solid transparent;
+    
+    small {
+      font-size: 14px;
+    }
+
+    .span-hero {
+      border-top: 4px solid $green-light-primary;
+      border-bottom: 4px solid $green-light-primary;
+      font-size: 80px;
+
+        strong {
+          margin-top: -25px;
+          margin-bottom: -25px;
+        }
+
+        small {
+          font-size: 57px;
+        }
+    }
+
+    span.span-bot {
+      font-size: 21px;
+    }
+
+    span.span-bot-k60 {
+      font-size: 21px; 
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      color: $green-light-secondary;
+
+      small {
+        font-size: 14px;
+      }
+
+      .span-hero {
+        border-top: 4px solid $green-light-secondary;
+        border-bottom: 4px solid $green-light-secondary;
+        font-size: 80px;
+      }
+
+      span.span-bot {
+        font-size: 21px;
+      }
+
+      span.span-bot-k60 {
+        font-size: 21px; 
+      }
+    }
+  }
+}
+
+#sold-tickets {
+  margin-top: 20px;
+
+  figure.figure-sold {
+    position: relative;
+    h1 {
+      font-size: 40px;
+      color: #fff;
+      text-shadow: 2px 2px #9b9b9b;
+      position: absolute;
+      top: 40%;
+      left: 10%;
+    }
+  }
+
+  img.img-sold {
+    height: 20px;
+  }
+
+  p {
+    font-size: 17px;
+    color: rgba(33,37,41, 0.8);
+  
+    ul {
+      li {
+        font-size: 17px;
+        color: rgba(33,37,41, 0.8);
+      }
+    }
+  }
+
+  ul {
+    li {
+        list-style-type: none;
+    }
+  }
+  
+  .btn {
+    &.focus {
+      box-shadow: none;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .btn-money {
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    
+    &.active {
+      background-color: $green-light-primary;
+      border-color: $green-light-primary;
+    }
+
+    &:hover {
+      background-color: $green-light-primary;
+      border-color: $green-light-primary;
+    }
+  }
+
+  table {
+    font-weight: bold;
+    
+    thead {
+      th {
+        &.th-active {
+          border-top: 20px solid $green-light-primary;
+          border-bottom: 1px solid $green-light-primary;
+        } 
+      }
+    }
+
+    tbody {
+      td {
+        &.td-active {
+          border-bottom: 1px solid $green-light-primary;
+          
+          &:hover {
+            background-color: $green-light-secondary;
+          }
+        }
+
+        &.td-active-end {
+          border-bottom: 20px solid $green-light-primary;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+      }
+    }
+  }
+
+  a {
+    background-color: $green-light-primary;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    
+    &:hover {
+      color: #fff;
+      background-color: $green-dark-secondary;
+      font-weight: bold;
+    }
+  }
+}
+
+#how-to-get {
+  h2 {
+    font-size: 40px;
+  }
+}
+footer {
+
+  .icon-social {
+    a {
+      color: #fff;
+      border: 2px solid #fff;
+      
+      &:hover {
+        color: $green-light-primary;
+        border: 2px solid $green-light-primary;
+      }
+    }
+  }
+
+  img {
+    height: 100px;
+
+    &.img-footer {
+      margin-top: 6px;
+      margin-bottom: 6px;
+    }
+
+    &.img-sporthub {
+      width: 120px;
+    }
+  }
+  
+  a.contact {
+    color: #fff;
+    
+    &:hover {
+      color:$green-light-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  img.ramita {
+    width: 60px;
+  }
+
+  .h-123 {
+    height: 123px;
+  }
+
+  h1 {
+    font-size: 43px;
+    font-family: 'agendabold';
+    text-transform: uppercase;
+    letter-spacing: -0.12rem;
+  }
+
+  h2 {
+    color: $green-light-primary;
+    font-size: 43px;
+    font-family: 'agendabold';
+    text-transform: uppercase;
+  }
+  
+  #montana {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 38px;
+    background: url('../img/patron/mountains_1.png') repeat-x;
+    left: 0;
+    z-index: 99;
+  }
+
+  #nav-desktop {
+    img {
+      height: 100px;
+    }
+    .custom-navbar-nav {
+      margin-right: 0;
+
+      li {
+        a.nav-link {
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 17px;
+
+          &:before {
+            font-size: 30px;
+          }
+          
+
+          &.deactive {
+            color: rgba(255, 255, 255, 0.6);
+
+            &:before {
+              color: rgba(255, 255, 255, 0.6);
+            }
+
+            &:hover {
+              color: rgba(255, 255, 255, 0.6);
+              &:hover:before {
+                color: rgba(255, 255, 255, 0.6);
+              }
+            }
+          }
+          
+          &:hover {
+            color: $green-light-primary;
+            &:hover:before {
+                color: $green-light-primary;
+              }
+          }
+
+          .span-a {
+            display: block;
+            font-family: 'agendabold' !important;
+          }
+        }
+
+        a.active {
+          color: $green-light-primary;
+          background-color: transparent;
+
+          &:before {
+            color: $green-light-primary;
+          }
+        }
+      }
+    }
+  }
+
+  #home {
+    margin-top: 0;
+    height: 100%;
+    position: relative;
+  }
+
+  #info-general {
+    .col-info-date {
+      padding-top: 0;
+    }
+  }
+  
+  #sponsor {
+    .col-sponsor {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  #distances {
+    button {
+      
+      small {
+        font-size: 20px;
+      }
+
+      .span-hero {
+        width: 100%;
+        text-align: center;
+        border-top: 4px solid $green-light-primary;
+        border-bottom: 4px solid $green-light-primary;
+        font-size: 90px;
+
+        strong {
+          margin-top: -25px;
+          margin-bottom: -25px;
+        }
+
+        small {
+          font-size: 64px;
+        }
+      }
+
+      span.span-bot {
+        font-size: 31px;
+      }
+
+      span.span-bot-k60 {
+        font-size: 31px; 
+      }
+
+      strong.distance-mas {
+        margin-left: -5px;
+      }
+
+      &:hover {
+        color: $green-light-secondary;
+
+        small {
+          font-size: 20px;
+        }
+
+        .span-hero {
+          border-top: 4px solid $green-light-secondary;
+          border-bottom: 4px solid $green-light-secondary;
+          font-size: 90px;
+          
+          small {
+            font-size: 64px;
+          }
+        }
+
+        span.span-bot {
+          font-size: 31px;
+        }
+
+        span.span-bot-k60 {
+          font-size: 31px; 
+        }
+
+        strong.distance-mas {
+          margin-left: -5px;
+        }
+      }
+    }
+  }
+
+  #sold-tickets {
+    figure.figure-sold {
+      position: relative;
+      h1 {
+        color: #fff;
+        text-shadow: 2px 2px #9b9b9b;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+      }
+    }
+
+    img.img-sold {
+      height: 20px;
+    }
+  }
+
+  #how-to-get {
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
