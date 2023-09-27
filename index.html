@@ -5,9 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- AOS Effect -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -16,6 +13,9 @@
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+  <!-- AOS Effect -->
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
   
   <!-- Custom Style --> 
   <link rel="stylesheet" href="assets/css/index.css">
@@ -497,9 +497,6 @@
     })();
 </script>
 
-<!-- development version, includes helpful console warnings -->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
 <!-- AOS Script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -535,52 +532,7 @@
   });
 </script>
 
-<script>
-  var inscripciones = new Vue({
-    el: '#sold-tickets',
-    data: {
-      select_currency: 'CLP', 
-      prices: [
-        {
-          "currency": "CLP",
-          "13k-clp01": "$ 22.000 CLP",
-          "13k-clp02": "$ 32.000 CLP",
-          "13k-clp03": "$ 42.000 CLP",
-          "21k-clp01": "$ 22.000 CLP",
-          "21k-clp02": "$ 32.000 CLP",
-          "21k-clp03": "$ 42.000 CLP",
-          "32k-clp01": "$ 25.000 CLP",
-          "32k-clp02": "$ 35.000 CLP",
-          "32k-clp03": "$ 45.000 CLP",
-          "62k-clp01": "$ 30.000 CLP",
-          "62k-clp02": "$ 40.000 CLP",
-          "62k-clp03": "$ 50.000 CLP"
-        },
-        {
-          "currency": "USD",
-          "13k-usd01": "$ 40 USD",
-          "13k-usd02": "$ 55 USD",
-          "13k-usd03": "$ 72 USD",
-          "21k-usd01": "$ 40 USD",
-          "21k-usd02": "$ 55 USD",
-          "21k-usd03": "$ 72 USD",
-          "32k-usd01": "$ 45 USD",
-          "32k-usd02": "$ 60 USD",
-          "32k-usd03": "$ 77 USD",
-          "62k-usd01": "$ 50 USD",
-          "62k-usd02": "$ 70 USD",
-          "62k-usd03": "$ 86 USD"
-        },
-      ]
-    },
-    methods: {
-      changeCurrency: function(currency){
-        console.log(currency);
-        this.select_currency = currency;
-      }
-    },
-  })
-</script>
+
 
 
 </body>
