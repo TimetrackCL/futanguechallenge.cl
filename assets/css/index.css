@@ -324,3 +324,28 @@ footer .icon-social a:hover {
 .hero-title--secondary-2 {
   margin-bottom: 4rem;
 }
+
+.table--date th,
+.table--date td {
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.th--active {
+  background-color: #9dab13;
+  color: #fff!important;
+}
+
+.td--active {
+  background-color: #9dab13;
+  color: #fff!important;
+}
+
+.th--init {
+  background-color: #313415;
+  color: #fff!important;
+}
+
+.table thead th {
+  border-color: #bdc46f!important;
+}

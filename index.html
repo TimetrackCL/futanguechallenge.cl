@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- AOS Effect -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -138,13 +141,13 @@
 
   <div class="hero--wrapper d-flex justify-content-md-center">
     <div class="container">
-      <h1 class="hero-title--primary d-none d-md-block">FUTANGUE CHALLENGE</h1>
-      <h1 class="hero-title--primary-2 d-block d-md-none">FUTANGUE CHALLENGE</h1> 
+      <h1 class="hero-title--primary d-none d-md-block" data-aos="fade-right">FUTANGUE CHALLENGE</h1>
+      <h1 class="hero-title--primary-2 d-block d-md-none" data-aos="fade-right">FUTANGUE CHALLENGE</h1> 
 
-      <h2 class="hero-title--secondary d-none d-md-block"><strong class="text-white">CORRER</strong> ES <strong class="text-green-light-secondary">NATURAL</strong></h2>
-      <h2 class="hero-title--secondary-2 d-block d-md-none"><strong class="text-white">CORRER</strong> ES <strong class="text-green-light-secondary">NATURAL</strong></h2>
+      <h2 class="hero-title--secondary d-none d-md-block" data-aos="fade-right"><strong class="text-white">CORRER</strong> ES <strong class="text-green-light-secondary">NATURAL</strong></h2>
+      <h2 class="hero-title--secondary-2 d-block d-md-none" data-aos="fade-right"><strong class="text-white">CORRER</strong> ES <strong class="text-green-light-secondary">NATURAL</strong></h2>
 
-      <div class="hero-logo_box d-flex justify-content-center justify-content-md-end">
+      <div class="hero-logo_box d-flex justify-content-center justify-content-md-end" data-aos="fade-left">
         <img src="assets/img/logofutangue.png" alt="" class="hero-logo d-none d-md-block">
         <img src="assets/img/logofutangue.png" alt="" class="hero-logo-2 d-block d-md-none">
       </div>
@@ -157,7 +160,7 @@
 <!-- /header -->
 
 <!-- info-general -->
-<section id="info-general">
+<section id="info-general" data-aos="fade-up">
   <div class="container text-green-dark-secondary">
     <div class="row">
       <div class="col-12 col-md-6 text-center">
@@ -240,7 +243,7 @@
  /sponsor -->
 
 <!-- distances -->
-<section id="distances" class="bg-green-dark-primary">
+<section id="distances" class="bg-green-dark-primary" data-aos="fade-up">
   <div class="container">
     <div class="row py-4">
       <div class="col-12 text-center">
@@ -368,12 +371,33 @@
 
 
 <!-- sold-tickets -->
-<section id="sold-tickets">
+<section id="sold-tickets" data-aos="fade-up">
   <div class="container py-4">
     <div class="row align-items-center">
-      <div class="col-12 d-flex align-items-start flex-column mb-5">
+      <div class="col-12 d-flex align-items-start flex-column mb-3">
         <h2 class="text-green-light-primary mb-0">INSCRIPCIONES</h2>
-        <img src="assets/img/ramita.png" alt="" class="ramita mt-2">
+        <img src="assets/img/ramita.png" alt="" class="ramita mt-2 mb-3">
+        <p>
+          ¡No te pierdas la oportunidad de asegurar TÚ lugar en el <strong class="text-green-light-primary">Futangue Challenge by HOKA</strong> a precios especiales! Detalle de fechas de periodos de ventas a continuación:
+        </p>
+        <table class="table table--date">
+          <thead>
+            <tr>
+              <th scope="col" class="th--init">PERIODO</th>
+              <th scope="col" class="th--active">PREVENTA 1</th>
+              <th scope="col">PREVENTA 2</th>
+              <th scope="col">VALOR OFICIAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="th--init">FECHAS</td>
+              <td scope="row" class="td--active">27 de SEP - 05 de OCT</td>
+              <td>06 de OCT - 31 de DIC</td>
+              <td>01 de ENE - 3 de Feb</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="col-12">
@@ -391,7 +415,7 @@
 
 
 <!-- kit -->
-<section id="kit">
+<section id="kit" data-aos="fade-up">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 px-0">
@@ -404,7 +428,7 @@
 
 
 <!-- how-to-get -->
-<section id="how-to-get" class="bg-green-dark-secondary">
+<section id="how-to-get" class="bg-green-dark-secondary" data-aos="fade-up">
   <div class="container-fluid">
    <div class="row mt-4">
      <div class="col-12 col-md-3 offset-md-2 d-flex mb-2 align-items-center htg-col-title my-4">
@@ -422,7 +446,7 @@
 <!-- /how-to-get -->
 
 <!-- footer -->
-<footer id="contact" class="bg-green-dark-primary py-4">
+<footer id="contact" class="bg-green-dark-primary py-4" data-aos="fade-up">
   <div class="container">
     <div class="row text-white">
       <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
@@ -475,6 +499,16 @@
 
 <!-- development version, includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+            duration: 1000,
+            once: true
+        }
+    );
+</script>
 
 <script>
   var scroll = $(window).scrollTop();   
@@ -548,33 +582,6 @@
   })
 </script>
 
-<!-- <script>
 
-  var countDownDate = new Date("Feb 8, 2020 00:00:00").getTime();
-
-  var x = setInterval(function() {
-
-    var now = new Date().getTime();
-
-    var distance = countDownDate - now;
-
-    var d = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var s = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("days").innerHTML = d; 
-
-    document.getElementById("hours").innerHTML = h; 
-    document.getElementById("minutes").innerHTML = m; 
-    document.getElementById("seconds").innerHTML = s; 
-
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-</script> -->
-    
 </body>
 </html>
