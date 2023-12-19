@@ -189,7 +189,8 @@ footer a.contact:hover { color: #9dab13; text-decoration: none; }
   #sold-tickets figure.figure-sold { position: relative; }
   #sold-tickets figure.figure-sold h1 { color: #fff; text-shadow: 2px 2px #9b9b9b; position: absolute; top: 40%; left: 25%; }
   #sold-tickets img.img-sold { height: 20px; }
-  #how-to-get h2 { font-size: 40px; } }
+  #how-to-get h2 { font-size: 40px; } 
+  .hero-title--primary-2 {margin-top: 10rem;} }
 
 /*# sourceMappingURL=index.css.map */
 
@@ -292,7 +293,7 @@ footer .icon-social a:hover {
 }
 
 .hero-title--primary-2 {
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 .hero-title--primary-2,
@@ -349,3 +350,4 @@ footer .icon-social a:hover {
 .table thead th {
   border-color: #bdc46f!important;
 }
+
