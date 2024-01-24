@@ -11,7 +11,7 @@
     align-items: end;
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 60s linear infinite;
-    width: calc(200px*9);
+    width: calc(200px*11);
   }
   
   .slider-sponsor .slide-sponsor {
