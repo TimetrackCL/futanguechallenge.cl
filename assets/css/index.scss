@@ -2,10 +2,16 @@
 * COLORS *
 \********/
 $black: rgba(0, 0, 0, 0.6);
-$green-dark-primary: rgb(49, 52, 21);
-$green-dark-secondary: rgb(97, 103, 41);
-$green-light-primary: rgb(157, 171, 19);
-$green-light-secondary: rgb(189, 196, 111);
+
+// $green-dark-primary: rgb(49, 52, 21);
+$green-dark-primary: rgb(22, 31, 39);
+
+// $green-dark-secondary: rgb(97, 103, 41);
+$green-dark-secondary: rgb(86, 99, 100);
+
+$green-light-primary: rgb(157, 174, 40);
+// $green-light-secondary: rgb(189, 196, 111);
+$green-light-secondary: rgb(244, 230, 174);
 
 /********\
 * FONTS  *
@@ -193,9 +199,20 @@ h1 {
 
 h2 {
   color: $green-light-primary;
-  font-size: 48px;
   font-family: 'agendabold';
   text-transform: uppercase;
+}
+
+.hero-title--primary, .hero-title--primary-2 {
+  text-align: left;
+  margin-top: 3rem;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.hero-title--secondary, .hero-title--secondary-2 {
+  text-align: left;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 /**************\
@@ -206,6 +223,45 @@ body {
   font-family: 'Agenda';
   margin-bottom: 0;
   padding-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+p {
+  margin-top: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem!important;
+}
+
+.my-5 {
+  margin-top: 4rem!important;
+  margin-bottom: 4rem!important;
+}
+
+.mt-2 {
+  margin-top: 2rem!important;
+}
+
+.mr-date {
+  margin-right: 3rem;
+}
+
+.border-green {
+  border: 3px solid $green-light-primary;
+  padding: 1rem 2rem;
+  border-radius: 7% 5% 7% 5%;
+  margin-top: 3rem;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.py-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 header {
@@ -215,6 +271,51 @@ header {
   img {
     max-height: 100vh;
     z-index: 2;
+  }
+
+  .hero--wrapper {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    max-height: 1080px;
+    top: 0;
+
+    h1 {
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 3rem;
+      text-transform: capitalize;
+      text-align: left;
+    }
+
+    .hero-title--secondary {
+      font-size: 1rem;
+    }
+
+    .btn-inscription {
+      background-color: $green-light-primary;
+      color: #fff;
+      border-radius: 0;
+      padding: 10px 40px;
+      border: 2px solid transparent;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      width: 250px;
+      font-size: 20px;
+
+      &:hover{
+        background-color: $green-dark-secondary;
+      }
+    }
+  }
+
+  .hero--wrapper-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
   }
 }
 
@@ -291,16 +392,22 @@ header {
     padding-top: 4rem;
   }
   small.date {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     letter-spacing: 0;
     line-height: 43px;
   }
   img.principal {
     max-width: 80%;
     transform: rotate(-10deg);
-    -webkit-box-shadow: -22px -9px 73px -9px rgba(0,0,0,0.75);
-    -moz-box-shadow: -22px -9px 73px -9px rgba(0,0,0,0.75);
-    box-shadow: -22px -9px 73px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75);
+    border: 8px double #fff;
+  }
+
+  .sub-title {
+    font-family: "agendamedium_italic";
+    text-transform: none;
   }
 
   .btn-info-futangue {
@@ -337,8 +444,8 @@ header {
     }
 
     .span-hero {
-      border-top: 4px solid $green-light-primary;
-      border-bottom: 4px solid $green-light-primary;
+      border-top: 4px solid $green-light-secondary;
+      border-bottom: 4px solid $green-light-secondary;
       font-size: 80px;
 
         strong {
@@ -500,6 +607,8 @@ header {
     font-size: 40px;
   }
 }
+
+
 footer {
 
   .icon-social {
@@ -539,6 +648,10 @@ footer {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .hero-title--primary, .hero-title--secondary {
+    font-size: 4rem !important;
+  }
+
   img.ramita {
     width: 60px;
   }
@@ -548,7 +661,7 @@ footer {
   }
 
   h1 {
-    font-size: 43px;
+    font-size: 3rem;
     font-family: 'agendabold';
     text-transform: uppercase;
     letter-spacing: -0.12rem;
@@ -559,6 +672,16 @@ footer {
     font-size: 43px;
     font-family: 'agendabold';
     text-transform: uppercase;
+  }
+
+  .border-green {
+    border: 3px solid $green-light-primary;
+    padding: 1rem 2rem;
+    border-radius: 25% 25% 25% 25%;
+  }
+
+  .header .hero--wrapper .hero-title--secondary {
+    font-size: 4rem!important;
   }
   
   #montana {
@@ -658,8 +781,8 @@ footer {
       .span-hero {
         width: 100%;
         text-align: center;
-        border-top: 4px solid $green-light-primary;
-        border-bottom: 4px solid $green-light-primary;
+        border-top: 4px solid $green-light-secondary;
+        border-bottom: 4px solid $green-light-secondary;
         font-size: 90px;
 
         strong {

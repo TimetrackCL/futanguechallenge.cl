@@ -1,0 +1,11 @@
+.efluj_iframe iframe {
+    width: 100%;
+    height: 14210px;    
+}
+
+@media (min-width: 576px) {
+    .efluj_iframe iframe {
+        height: 4500px;
+    }
+    
+}

@@ -1,7 +1,7 @@
 .slider-sponsor {
     width: 100%;
     height: auto;
-    margin: auto;
+    max-height: 400px;
     overflow: hidden;
     margin-top: 2rem;
   }
