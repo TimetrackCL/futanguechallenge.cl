@@ -170,6 +170,10 @@ img.ramita {
   height: 123px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 h1 {
   font-size: 48px;
   font-family: "agendabold";
@@ -231,7 +235,7 @@ p {
 .border-green {
   border: 3px solid rgb(157, 174, 40);
   padding: 1rem 2rem;
-  border-radius: 5px;
+  border-radius: 7% 5% 7% 5%;
   margin-top: 3rem;
 }
 
@@ -516,6 +520,10 @@ header .hero--wrapper-flex {
   font-size: 40px;
 }
 
+.mt-mobile {
+  margin-top: 2rem;
+}
+
 footer .icon-social a {
   color: #fff;
   border: 2px solid transparent;
@@ -568,6 +576,7 @@ footer a.contact:hover {
   .border-green {
     border: 3px solid rgb(157, 174, 40);
     padding: 1rem 2rem;
+    border-radius: 25% 25% 25% 25%;
   }
   .header .hero--wrapper .hero-title--secondary {
     font-size: 4rem !important;
@@ -700,5 +709,8 @@ footer a.contact:hover {
   }
   #how-to-get h2 {
     font-size: 40px;
+  }
+  .mt-mobile {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=index.css.map */
