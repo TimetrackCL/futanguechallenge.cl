@@ -3,14 +3,16 @@
 \********/
 $black: rgba(0, 0, 0, 0.6);
 
-// $green-dark-primary: rgb(49, 52, 21);
-$green-dark-primary: rgb(22, 31, 39);
 
-// $green-dark-secondary: rgb(97, 103, 41);
-$green-dark-secondary: rgb(86, 99, 100);
+//$green-dark-primary: rgb(22, 31, 39);
+$green-dark-primary: #111B23;
 
-$green-light-primary: rgb(157, 174, 40);
-// $green-light-secondary: rgb(189, 196, 111);
+//$green-dark-secondary: rgb(86, 99, 100);
+$green-dark-secondary: #172A2F;
+
+//$green-light-primary: rgb(157, 174, 40);
+$green-light-primary: #9dae28;
+
 $green-light-secondary: rgb(244, 230, 174);
 
 /********\
@@ -22,7 +24,7 @@ $raleway: 'Raleway', sans-serif;
 @font-face {
   font-family: 'agendamediumultracondensed';
   src: url('../fonts/agenda-mediumultracondensed-webfont.woff2') format('woff2'),
-       url('../fonts/agenda-mediumultracondensed-webfont.woff') format('woff');
+    url('../fonts/agenda-mediumultracondensed-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,7 +32,7 @@ $raleway: 'Raleway', sans-serif;
 @font-face {
   font-family: 'agendamedium_italic';
   src: url('../fonts/agenda-mediumitalic-webfont.woff2') format('woff2'),
-       url('../fonts/agenda-mediumitalic-webfont.woff') format('woff');
+    url('../fonts/agenda-mediumitalic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -38,7 +40,7 @@ $raleway: 'Raleway', sans-serif;
 @font-face {
   font-family: 'agendamediumextracondensed';
   src: url('../fonts/agenda-mediumextracondensed-webfont.woff2') format('woff2'),
-       url('../fonts/agenda-mediumextracondensed-webfont.woff') format('woff');
+    url('../fonts/agenda-mediumextracondensed-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -46,7 +48,7 @@ $raleway: 'Raleway', sans-serif;
 @font-face {
   font-family: 'agendamediumcondensed';
   src: url('../fonts/agenda-mediumcondensed-webfont.woff2') format('woff2'),
-       url('../fonts/agenda-mediumcondensed-webfont.woff') format('woff');
+    url('../fonts/agenda-mediumcondensed-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -55,7 +57,7 @@ $raleway: 'Raleway', sans-serif;
 @font-face {
   font-family: 'agendamedium';
   src: url('../fonts/agenda-medium-webfont.woff2') format('woff2'),
-       url('../fonts/agenda-medium-webfont.woff') format('woff');
+    url('../fonts/agenda-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -63,7 +65,7 @@ $raleway: 'Raleway', sans-serif;
 @font-face {
   font-family: 'agendaboldultracondensed';
   src: url('../fonts/agenda-boldultracondensed-webfont.woff2') format('woff2'),
-       url('../fonts/agenda-boldultracondensed-webfont.woff') format('woff');
+    url('../fonts/agenda-boldultracondensed-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -72,7 +74,7 @@ $raleway: 'Raleway', sans-serif;
 @font-face {
   font-family: 'agendaboldextracondensed';
   src: url('../fonts/agenda-boldextracondensed-webfont.woff2') format('woff2'),
-       url('../fonts/agenda-boldextracondensed-webfont.woff') format('woff');
+    url('../fonts/agenda-boldextracondensed-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -80,7 +82,7 @@ $raleway: 'Raleway', sans-serif;
 @font-face {
   font-family: 'agendaboldcondensed';
   src: url('../fonts/agenda-boldcondensed-webfont.woff2') format('woff2'),
-       url('../fonts/agenda-boldcondensed-webfont.woff') format('woff');
+    url('../fonts/agenda-boldcondensed-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -88,7 +90,7 @@ $raleway: 'Raleway', sans-serif;
 @font-face {
   font-family: 'agendabold';
   src: url('../fonts/agenda-bold-webfont.woff2') format('woff2'),
-       url('../fonts/agenda-bold-webfont.woff') format('woff');
+    url('../fonts/agenda-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -99,33 +101,43 @@ $raleway: 'Raleway', sans-serif;
 .font-oswald {
   font-family: $oswald;
 }
+
 .font-raleway {
   font-family: $raleway;
 }
+
 .font-agenda-medium-ultra-condensed {
   font-family: 'agendamediumultracondensed';
 }
+
 .font-agenda-medium-italic {
   font-family: 'agendamedium_italic';
 }
+
 .font-agenda-medium-extra-condensed {
   font-family: 'agendamediumextracondensed';
 }
+
 .font-agenda-medium-condensed {
   font-family: 'agendamediumcondensed';
 }
+
 .font-agenda-medium {
   font-family: 'agendamedium';
 }
+
 .font-agenda-bold-ultra-condensed {
   font-family: 'agendaboldultracondensed';
 }
+
 .font-agenda-bold-extra-condensed {
   font-family: 'agendaboldextracondensed';
 }
+
 .font-agenda-bold-condensed {
   font-family: 'agendaboldcondensed';
 }
+
 .font-agenda-bold {
   font-family: 'agendabold';
 }
@@ -133,18 +145,23 @@ $raleway: 'Raleway', sans-serif;
 .bg-black {
   background-color: $black;
 }
+
 .bg-black-strong {
   background-color: #000;
 }
+
 .bg-green-dark-primary {
   background-color: $green-dark-primary;
 }
+
 .bg-green-dark-secondary {
   background-color: $green-dark-secondary;
 }
+
 .bg-green-light-primary {
   background-color: $green-light-primary;
 }
+
 .bg-green-light-secondary {
   background-color: $green-light-secondary;
 }
@@ -152,15 +169,19 @@ $raleway: 'Raleway', sans-serif;
 .text-black {
   color: $black;
 }
+
 .text-green-dark-primary {
   color: $green-dark-primary;
 }
+
 .text-green-dark-secondary {
   color: $green-dark-secondary;
 }
+
 .text-green-light-primary {
   color: $green-light-primary;
 }
+
 .text-green-light-secondary {
   color: $green-light-secondary;
 }
@@ -172,14 +193,14 @@ $raleway: 'Raleway', sans-serif;
 .deg-white {
   width: 100%;
   height: 20px;
-  background: rgba(255,255,255,1);
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(248,248,248,1)));
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
-background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
-background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
-background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0 );
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 248, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(248, 248, 248, 1)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 248, 1) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 248, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 248, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(248, 248, 248, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0);
 }
 
 img.ramita {
@@ -207,13 +228,15 @@ h2 {
   text-transform: uppercase;
 }
 
-.hero-title--primary, .hero-title--primary-2 {
+.hero-title--primary,
+.hero-title--primary-2 {
   text-align: left;
   margin-top: 3rem;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.hero-title--secondary, .hero-title--secondary-2 {
+.hero-title--secondary,
+.hero-title--secondary-2 {
   text-align: left;
   color: #fff;
   text-shadow: black 0.1em 0.1em 0.2em;
@@ -236,16 +259,16 @@ p {
 }
 
 .mb-5 {
-  margin-bottom: 5rem!important;
+  margin-bottom: 5rem !important;
 }
 
 .my-5 {
-  margin-top: 4rem!important;
-  margin-bottom: 4rem!important;
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
 }
 
 .mt-2 {
-  margin-top: 2rem!important;
+  margin-top: 2rem !important;
 }
 
 .mr-date {
@@ -271,7 +294,7 @@ p {
 header {
   height: 100vh;
   position: relative;
-  
+
   img {
     max-height: 100vh;
     z-index: 2;
@@ -308,7 +331,7 @@ header {
       width: 250px;
       font-size: 20px;
 
-      &:hover{
+      &:hover {
         background-color: $green-dark-secondary;
       }
     }
@@ -327,10 +350,11 @@ header {
   position: absolute;
   bottom: -1px;
   width: 100%;
-  height: 30px;
-  background: url('../img/patron/mountains_1.png') repeat-x;
+  height: 330px;
+  background: url('../img/patron/patron-banner-hero.png') repeat-x;
   left: 0;
   z-index: 99;
+  opacity: 0.2;
 }
 
 #nav-mobile {
@@ -341,7 +365,7 @@ header {
         text-transform: uppercase;
         color: #fff;
         font-size: 17px;
-        
+
         &:before {
           top: 5px;
           font-size: 17px;
@@ -356,6 +380,7 @@ header {
 
           &:hover {
             color: rgba(255, 255, 255, 0.6);
+
             &:hover:before {
               color: rgba(255, 255, 255, 0.6);
             }
@@ -376,10 +401,10 @@ header {
   margin-top: 20px;
 }
 
-#slideHero { 
+#slideHero {
   position: relative;
   height: 100vh;
-  
+
   .overlay {
     position: absolute;
     top: 0;
@@ -392,14 +417,17 @@ header {
 
 #info-general {
   margin-top: 100px;
+
   .col-info-date {
     padding-top: 4rem;
   }
+
   small.date {
     font-size: 1.25rem;
     letter-spacing: 0;
     line-height: 43px;
   }
+
   img.principal {
     max-width: 80%;
     transform: rotate(-10deg);
@@ -434,7 +462,7 @@ header {
 
 #distances {
   position: relative;
-  
+
   button {
     font-family: 'agendabold';
     color: #fff;
@@ -442,7 +470,7 @@ header {
     background-color: transparent;
     border: none;
     border: 1px solid transparent;
-    
+
     small {
       font-size: 14px;
     }
@@ -452,14 +480,14 @@ header {
       border-bottom: 4px solid $green-light-secondary;
       font-size: 80px;
 
-        strong {
-          margin-top: -25px;
-          margin-bottom: -25px;
-        }
+      strong {
+        margin-top: -25px;
+        margin-bottom: -25px;
+      }
 
-        small {
-          font-size: 57px;
-        }
+      small {
+        font-size: 57px;
+      }
     }
 
     span.span-bot {
@@ -467,7 +495,7 @@ header {
     }
 
     span.span-bot-k60 {
-      font-size: 21px; 
+      font-size: 21px;
     }
 
     &:focus {
@@ -492,7 +520,7 @@ header {
       }
 
       span.span-bot-k60 {
-        font-size: 21px; 
+        font-size: 21px;
       }
     }
   }
@@ -503,6 +531,7 @@ header {
 
   figure.figure-sold {
     position: relative;
+
     h1 {
       font-size: 40px;
       color: #fff;
@@ -519,22 +548,22 @@ header {
 
   p {
     font-size: 17px;
-    color: rgba(33,37,41, 0.8);
-  
+    color: rgba(33, 37, 41, 0.8);
+
     ul {
       li {
         font-size: 17px;
-        color: rgba(33,37,41, 0.8);
+        color: rgba(33, 37, 41, 0.8);
       }
     }
   }
 
   ul {
     li {
-        list-style-type: none;
+      list-style-type: none;
     }
   }
-  
+
   .btn {
     &.focus {
       box-shadow: none;
@@ -550,7 +579,7 @@ header {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d;
-    
+
     &.active {
       background-color: $green-light-primary;
       border-color: $green-light-primary;
@@ -564,13 +593,13 @@ header {
 
   table {
     font-weight: bold;
-    
+
     thead {
       th {
         &.th-active {
           border-top: 20px solid $green-light-primary;
           border-bottom: 1px solid $green-light-primary;
-        } 
+        }
       }
     }
 
@@ -578,7 +607,7 @@ header {
       td {
         &.td-active {
           border-bottom: 1px solid $green-light-primary;
-          
+
           &:hover {
             background-color: $green-light-secondary;
           }
@@ -597,7 +626,7 @@ header {
     color: #fff;
     font-size: 22px;
     letter-spacing: 1px;
-    
+
     &:hover {
       color: #fff;
       background-color: $green-dark-secondary;
@@ -623,7 +652,7 @@ footer {
       color: #fff;
       border: 2px solid transparent;
       font-size: 2rem;
-      
+
       &:hover {
         color: $green-light-primary;
         border: 2px solid transparent;
@@ -643,12 +672,12 @@ footer {
       width: 120px;
     }
   }
-  
+
   a.contact {
     color: #fff;
-    
+
     &:hover {
-      color:$green-light-primary;
+      color: $green-light-primary;
       text-decoration: none;
     }
   }
@@ -675,7 +704,9 @@ footer {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .hero-title--primary, .hero-title--secondary {
+
+  .hero-title--primary,
+  .hero-title--secondary {
     font-size: 4rem !important;
   }
 
@@ -708,23 +739,25 @@ footer {
   }
 
   .header .hero--wrapper .hero-title--secondary {
-    font-size: 4rem!important;
+    font-size: 4rem !important;
   }
-  
+
   #montana {
     position: absolute;
     bottom: -1px;
     width: 100%;
-    height: 38px;
-    background: url('../img/patron/mountains_1.png') repeat-x;
+    height: 330px;
+    background: url('../img/patron/patron-banner-hero.png') repeat-x;
     left: 0;
-    z-index: 99;
+    z-index: 1;
+    opacity: 0.1;
   }
 
   #nav-desktop {
     img {
       height: 100px;
     }
+
     .custom-navbar-nav {
       margin-right: 0;
 
@@ -737,7 +770,7 @@ footer {
           &:before {
             font-size: 30px;
           }
-          
+
 
           &.deactive {
             color: rgba(255, 255, 255, 0.6);
@@ -748,17 +781,19 @@ footer {
 
             &:hover {
               color: rgba(255, 255, 255, 0.6);
+
               &:hover:before {
                 color: rgba(255, 255, 255, 0.6);
               }
             }
           }
-          
+
           &:hover {
             color: $green-light-primary;
+
             &:hover:before {
-                color: $green-light-primary;
-              }
+              color: $green-light-primary;
+            }
           }
 
           .span-a {
@@ -790,7 +825,7 @@ footer {
       padding-top: 0;
     }
   }
-  
+
   #sponsor {
     .col-sponsor {
       margin-top: 20px;
@@ -800,7 +835,7 @@ footer {
 
   #distances {
     button {
-      
+
       small {
         font-size: 20px;
       }
@@ -827,7 +862,7 @@ footer {
       }
 
       span.span-bot-k60 {
-        font-size: 31px; 
+        font-size: 31px;
       }
 
       strong.distance-mas {
@@ -845,7 +880,7 @@ footer {
           border-top: 4px solid $green-light-secondary;
           border-bottom: 4px solid $green-light-secondary;
           font-size: 90px;
-          
+
           small {
             font-size: 64px;
           }
@@ -856,7 +891,7 @@ footer {
         }
 
         span.span-bot-k60 {
-          font-size: 31px; 
+          font-size: 31px;
         }
 
         strong.distance-mas {
@@ -869,6 +904,7 @@ footer {
   #sold-tickets {
     figure.figure-sold {
       position: relative;
+
       h1 {
         color: #fff;
         text-shadow: 2px 2px #9b9b9b;

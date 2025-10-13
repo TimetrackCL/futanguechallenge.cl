@@ -1,0 +1,51 @@
+{
+  // Configuración para archivos SCSS y Gulp
+  
+  // Excluir archivos generados del explorador
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  
+  // Asociaciones de archivos
+  "files.associations": {
+    "*.scss": "scss"
+  },
+  
+  // Configuración para SCSS
+  "scss.validate": true,
+  "scss.lint.unknownAtRules": "ignore",
+  
+  // Auto-guardar
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  
+  // Formateo de SCSS
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  
+  // CSS
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+    "editor.tabSize": 2
+  },
+  
+  // Watcher de archivos
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/dist/**": true
+  },
+  
+  // Terminal integrada
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  
+  // Sugerencias de código
+  "css.completion.triggerPropertyValueCompletion": true,
+  "scss.completion.triggerPropertyValueCompletion": true
+}
+

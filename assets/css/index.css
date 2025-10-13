@@ -114,15 +114,15 @@
 }
 
 .bg-green-dark-primary {
-  background-color: rgb(22, 31, 39);
+  background-color: #111B23;
 }
 
 .bg-green-dark-secondary {
-  background-color: rgb(86, 99, 100);
+  background-color: #172A2F;
 }
 
 .bg-green-light-primary {
-  background-color: rgb(157, 174, 40);
+  background-color: #9dae28;
 }
 
 .bg-green-light-secondary {
@@ -134,15 +134,15 @@
 }
 
 .text-green-dark-primary {
-  color: rgb(22, 31, 39);
+  color: #111B23;
 }
 
 .text-green-dark-secondary {
-  color: rgb(86, 99, 100);
+  color: #172A2F;
 }
 
 .text-green-light-primary {
-  color: rgb(157, 174, 40);
+  color: #9dae28;
 }
 
 .text-green-light-secondary {
@@ -158,8 +158,9 @@
   height: 20px;
   background: rgb(255, 255, 255);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(255, 255, 255)), color-stop(100%, rgb(248, 248, 248)));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(248, 248, 248)));
   background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(248, 248, 248) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#f8f8f8", GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#f8f8f8", GradientType=0);
 }
 
 img.ramita {
@@ -182,18 +183,20 @@ h1 {
 }
 
 h2 {
-  color: rgb(157, 174, 40);
+  color: #9dae28;
   font-family: "agendabold";
   text-transform: uppercase;
 }
 
-.hero-title--primary, .hero-title--primary-2 {
+.hero-title--primary,
+.hero-title--primary-2 {
   text-align: left;
   margin-top: 3rem;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.hero-title--secondary, .hero-title--secondary-2 {
+.hero-title--secondary,
+.hero-title--secondary-2 {
   text-align: left;
   color: #fff;
   text-shadow: black 0.1em 0.1em 0.2em;
@@ -233,7 +236,7 @@ p {
 }
 
 .border-green {
-  border: 3px solid rgb(157, 174, 40);
+  border: 3px solid #9dae28;
   padding: 1rem 2rem;
   border-radius: 7% 5% 7% 5%;
   margin-top: 3rem;
@@ -275,7 +278,7 @@ header .hero--wrapper .hero-title--secondary {
   font-size: 1rem;
 }
 header .hero--wrapper .btn-inscription {
-  background-color: rgb(157, 174, 40);
+  background-color: #9dae28;
   color: #fff;
   border-radius: 0;
   padding: 10px 40px;
@@ -286,12 +289,21 @@ header .hero--wrapper .btn-inscription {
   font-size: 20px;
 }
 header .hero--wrapper .btn-inscription:hover {
-  background-color: rgb(86, 99, 100);
+  background-color: #172A2F;
 }
 header .hero--wrapper-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
 }
@@ -300,10 +312,11 @@ header .hero--wrapper-flex {
   position: absolute;
   bottom: -1px;
   width: 100%;
-  height: 30px;
-  background: url("../img/patron/mountains_1.png") repeat-x;
+  height: 330px;
+  background: url("../img/patron/patron-banner-hero.png") repeat-x;
   left: 0;
   z-index: 99;
+  opacity: 0.2;
 }
 
 #nav-mobile ul.navbar-nav li.nav-item a.nav-link {
@@ -329,7 +342,7 @@ header .hero--wrapper-flex {
   color: rgba(255, 255, 255, 0.6);
 }
 #nav-mobile ul.navbar-nav li.nav-item:hover {
-  background-color: rgb(157, 174, 40);
+  background-color: #9dae28;
 }
 
 #home {
@@ -364,7 +377,9 @@ header .hero--wrapper-flex {
 }
 #info-general img.principal {
   max-width: 80%;
+  -webkit-transform: rotate(-10deg);
   transform: rotate(-10deg);
+  -webkit-box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75);
   box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75);
   border: 8px double #fff;
 }
@@ -373,11 +388,11 @@ header .hero--wrapper-flex {
   text-transform: none;
 }
 #info-general .btn-info-futangue {
-  color: rgb(157, 174, 40);
+  color: #9dae28;
 }
 #info-general .btn-info-futangue:hover {
   text-decoration: none;
-  color: rgb(86, 99, 100);
+  color: #172A2F;
 }
 
 #sponsor .col-sponsor {
@@ -468,9 +483,11 @@ header .hero--wrapper-flex {
   list-style-type: none;
 }
 #sold-tickets .btn.focus {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 #sold-tickets .btn:focus {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 #sold-tickets .btn-money {
@@ -480,39 +497,40 @@ header .hero--wrapper-flex {
   border-color: #6c757d;
 }
 #sold-tickets .btn-money.active {
-  background-color: rgb(157, 174, 40);
-  border-color: rgb(157, 174, 40);
+  background-color: #9dae28;
+  border-color: #9dae28;
 }
 #sold-tickets .btn-money:hover {
-  background-color: rgb(157, 174, 40);
-  border-color: rgb(157, 174, 40);
+  background-color: #9dae28;
+  border-color: #9dae28;
 }
 #sold-tickets table {
   font-weight: bold;
 }
 #sold-tickets table thead th.th-active {
-  border-top: 20px solid rgb(157, 174, 40);
-  border-bottom: 1px solid rgb(157, 174, 40);
+  border-top: 20px solid #9dae28;
+  border-bottom: 1px solid #9dae28;
 }
 #sold-tickets table tbody td.td-active {
-  border-bottom: 1px solid rgb(157, 174, 40);
+  border-bottom: 1px solid #9dae28;
 }
 #sold-tickets table tbody td.td-active:hover {
   background-color: rgb(244, 230, 174);
 }
 #sold-tickets table tbody td.td-active-end {
-  border-bottom: 20px solid rgb(157, 174, 40);
+  border-bottom: 20px solid #9dae28;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #sold-tickets a {
-  background-color: rgb(157, 174, 40);
+  background-color: #9dae28;
   color: #fff;
   font-size: 22px;
   letter-spacing: 1px;
 }
 #sold-tickets a:hover {
   color: #fff;
-  background-color: rgb(86, 99, 100);
+  background-color: #172A2F;
   font-weight: bold;
 }
 
@@ -530,7 +548,7 @@ footer .icon-social a {
   font-size: 2rem;
 }
 footer .icon-social a:hover {
-  color: rgb(157, 174, 40);
+  color: #9dae28;
   border: 2px solid transparent;
 }
 footer img {
@@ -547,7 +565,7 @@ footer a.contact {
   color: #fff;
 }
 footer a.contact:hover {
-  color: rgb(157, 174, 40);
+  color: #9dae28;
   text-decoration: none;
 }
 
@@ -569,7 +587,8 @@ footer a.contact:hover {
 }
 
 @media (min-width: 768px) {
-  .hero-title--primary, .hero-title--secondary {
+  .hero-title--primary,
+  .hero-title--secondary {
     font-size: 4rem !important;
   }
   img.ramita {
@@ -585,13 +604,13 @@ footer a.contact:hover {
     letter-spacing: -0.12rem;
   }
   h2 {
-    color: rgb(157, 174, 40);
+    color: #9dae28;
     font-size: 43px;
     font-family: "agendabold";
     text-transform: uppercase;
   }
   .border-green {
-    border: 3px solid rgb(157, 174, 40);
+    border: 3px solid #9dae28;
     padding: 1rem 2rem;
     border-radius: 25% 25% 25% 25%;
   }
@@ -602,10 +621,11 @@ footer a.contact:hover {
     position: absolute;
     bottom: -1px;
     width: 100%;
-    height: 38px;
-    background: url("../img/patron/mountains_1.png") repeat-x;
+    height: 330px;
+    background: url("../img/patron/patron-banner-hero.png") repeat-x;
     left: 0;
-    z-index: 99;
+    z-index: 1;
+    opacity: 0.1;
   }
   #nav-desktop img {
     height: 100px;
@@ -634,21 +654,21 @@ footer a.contact:hover {
     color: rgba(255, 255, 255, 0.6);
   }
   #nav-desktop .custom-navbar-nav li a.nav-link:hover {
-    color: rgb(157, 174, 40);
+    color: #9dae28;
   }
   #nav-desktop .custom-navbar-nav li a.nav-link:hover:hover:before {
-    color: rgb(157, 174, 40);
+    color: #9dae28;
   }
   #nav-desktop .custom-navbar-nav li a.nav-link .span-a {
     display: block;
     font-family: "agendabold" !important;
   }
   #nav-desktop .custom-navbar-nav li a.active {
-    color: rgb(157, 174, 40);
+    color: #9dae28;
     background-color: transparent;
   }
   #nav-desktop .custom-navbar-nav li a.active:before {
-    color: rgb(157, 174, 40);
+    color: #9dae28;
   }
   #home {
     margin-top: 0;
@@ -730,4 +750,5 @@ footer a.contact:hover {
   .mt-mobile {
     margin-top: 0;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */

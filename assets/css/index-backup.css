@@ -152,6 +152,7 @@
 .deg-black {
   background: rgb(0, 0, 0);
   background: -webkit-gradient(left top, left bottom, color-stop(18%, rgb(0, 0, 0)), color-stop(24%, rgba(0, 0, 0, 0.93)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(18%, rgb(0, 0, 0)), color-stop(24%, rgba(0, 0, 0, 0.93)), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to bottom, rgb(0, 0, 0) 18%, rgba(0, 0, 0, 0.93) 24%, rgba(255, 255, 255, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#ffffff", GradientType=0 );
 }
@@ -256,7 +257,9 @@ header .welcome .row {
 }
 #info-general img.principal {
   max-width: 80%;
+  -webkit-transform: rotate(-10deg);
   transform: rotate(-10deg);
+  -webkit-box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75);
   box-shadow: -22px -9px 73px -9px rgba(0, 0, 0, 0.75);
 }
 
@@ -322,6 +325,7 @@ header .welcome .row {
 }
 #sold-tickets table tbody td.td-active-end {
   border-bottom: 20px solid rgb(157, 171, 19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #sold-tickets a {
@@ -415,4 +419,5 @@ footer a.contact:hover {
   #distances button:hover span.span-bot-k60 {
     font-size: 40px;
   }
-}/*# sourceMappingURL=index-backup.css.map */
+}
+/*# sourceMappingURL=index-backup.css.map */

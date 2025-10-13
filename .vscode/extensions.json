@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "ritwickdey.liveserver",
+    "glenn2223.live-sass",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next",
+    "mrmlnc.vscode-scss"
+  ]
+}
+
