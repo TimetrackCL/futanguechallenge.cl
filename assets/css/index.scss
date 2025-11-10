@@ -487,13 +487,15 @@ header {
 #distances {
   position: relative;
 
-  button {
+  button,
+  a {
     font-family: 'agendabold';
     color: #fff;
     text-transform: uppercase;
     background-color: transparent;
     border: none;
     border: 1px solid transparent;
+    cursor: pointer;
 
     small {
       font-size: 14px;
@@ -693,7 +695,9 @@ footer {
     }
 
     &.img-sporthub {
-      width: 120px;
+      height: 60px;
+      width: auto;
+      object-fit: contain;
     }
   }
 

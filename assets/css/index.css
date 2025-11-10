@@ -426,53 +426,67 @@ header .hero--wrapper-flex {
 #distances {
   position: relative;
 }
-#distances button {
+#distances button,
+#distances a {
   font-family: "agendabold";
   color: #fff;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
   border: 1px solid transparent;
+  cursor: pointer;
 }
-#distances button small {
+#distances button small,
+#distances a small {
   font-size: 14px;
 }
-#distances button .span-hero {
+#distances button .span-hero,
+#distances a .span-hero {
   border-top: 4px solid rgb(244, 230, 174);
   border-bottom: 4px solid rgb(244, 230, 174);
   font-size: 80px;
 }
-#distances button .span-hero strong {
+#distances button .span-hero strong,
+#distances a .span-hero strong {
   margin-top: -25px;
   margin-bottom: -25px;
 }
-#distances button .span-hero small {
+#distances button .span-hero small,
+#distances a .span-hero small {
   font-size: 57px;
 }
-#distances button span.span-bot {
+#distances button span.span-bot,
+#distances a span.span-bot {
   font-size: 21px;
 }
-#distances button span.span-bot-k60 {
+#distances button span.span-bot-k60,
+#distances a span.span-bot-k60 {
   font-size: 21px;
 }
-#distances button:focus {
+#distances button:focus,
+#distances a:focus {
   outline: none;
 }
-#distances button:hover {
+#distances button:hover,
+#distances a:hover {
   color: rgb(244, 230, 174);
 }
-#distances button:hover small {
+#distances button:hover small,
+#distances a:hover small {
   font-size: 14px;
 }
-#distances button:hover .span-hero {
+#distances button:hover .span-hero,
+#distances a:hover .span-hero {
   border-top: 4px solid rgb(244, 230, 174);
   border-bottom: 4px solid rgb(244, 230, 174);
   font-size: 80px;
 }
-#distances button:hover span.span-bot {
+#distances button:hover span.span-bot,
+#distances a:hover span.span-bot {
   font-size: 21px;
 }
-#distances button:hover span.span-bot-k60 {
+#distances button:hover span.span-bot-k60,
+#distances a:hover span.span-bot-k60 {
   font-size: 21px;
 }
 
@@ -581,7 +595,10 @@ footer img.img-footer {
   margin-bottom: 6px;
 }
 footer img.img-sporthub {
-  width: 120px;
+  height: 60px;
+  width: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 footer a.contact {
   color: #fff;
