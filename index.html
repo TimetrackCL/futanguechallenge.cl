@@ -59,6 +59,37 @@
     .nav-link-custom-adjust {
       padding-bottom: 25px;
     }
+    .circuit-modal-image {
+      max-width: 100%;
+      max-height: 90vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+    .modal-content {
+      background-color: transparent;
+      border: none;
+    }
+    .modal-header {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1051;
+      padding: 0;
+    }
+    .modal-header .close {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 300;
+      text-shadow: 0 0 5px rgba(0,0,0,0.5);
+      opacity: 1;
+    }
+    .modal-header .close:hover {
+      opacity: 0.8;
+    }
+    .modal-backdrop {
+      background-color: rgba(0, 0, 0, 0.85);
+    }
   </style>
 </head>
 <body data-spy="scroll" data-target="#nav-desktop" data-offset="400" class="font-agenda-medium">
@@ -310,7 +341,7 @@
   
           <!-- 38 KM -->
           <div class="col-6 col-md-4 text-center py-3">
-            <a href="assets/circuits/CIRCUITO-FUTANGUE-2026-38K.pdf" target="_blank" class="pb-2" style="text-decoration: none; display: inline-block;">
+            <a href="#" class="circuit-link pb-2" data-circuit-image="assets/circuits/CIRCUITO-38K-100.jpg" style="text-decoration: none; display: inline-block; cursor: pointer;">
               <small>dificultad: avanzada</small><br>
               <div class="span-hero d-flex justify-content-center align-items-center">
                 <strong>38</strong><small>K</small>
@@ -326,7 +357,7 @@
   
           <!-- 21 KM -->
           <div class="col-6 col-md-4 text-center py-3">
-            <a href="assets/circuits/CIRCUITO-FUTANGUE-2026-21K.pdf" target="_blank" class="pb-2" style="text-decoration: none; display: inline-block;">
+            <a href="#" class="circuit-link pb-2" data-circuit-image="assets/circuits/CIRCUITO-21K-100.jpg" style="text-decoration: none; display: inline-block; cursor: pointer;">
               <small>dificultad: media</small><br>
               <div class="span-hero d-flex justify-content-center align-items-center">
                 <strong>21</strong><small>K</small>
@@ -342,7 +373,7 @@
   
           <!-- 10 KM -->
           <div class="col-6 col-md-4 text-center py-3">
-            <a href="assets/circuits/CIRCUITO-FUTANGUE-2026-10K.pdf" target="_blank" class="pb-2" style="text-decoration: none; display: inline-block;">
+            <a href="#" class="circuit-link pb-2" data-circuit-image="assets/circuits/CIRCUITO-10K-100.jpg" style="text-decoration: none; display: inline-block; cursor: pointer;">
               <small>dificultad: baja</small><br>
               <div class="span-hero d-flex justify-content-center align-items-center">
                 <strong class="py-0">10</strong><small>K</small>
@@ -357,7 +388,7 @@
 
           <!-- 5 KM -->
           <div class="col-6 col-md-4 text-center py-3">
-            <a href="assets/circuits/CIRCUITO-FUTANGUE-2026-5K.pdf" target="_blank" class="pb-2" style="text-decoration: none; display: inline-block;">
+            <a href="#" class="circuit-link pb-2" data-circuit-image="assets/circuits/CIRCUITO-5K-100.jpg" style="text-decoration: none; display: inline-block; cursor: pointer;">
               <small>dificultad: baja</small><br>
               <div class="span-hero d-flex justify-content-center align-items-center">
                 <strong class="py-0">5</strong><small>K</small>
@@ -372,7 +403,7 @@
 
           <!-- 2 KM -->
           <div class="col-6 col-md-4 text-center py-3">
-            <a href="assets/circuits/CIRCUITO-FUTANGUE-2026-2K-kids.pdf" target="_blank" class="pb-2" style="text-decoration: none; display: inline-block;">
+            <a href="#" class="circuit-link pb-2" data-circuit-image="assets/circuits/CIRCUITO-2K-100.jpg" style="text-decoration: none; display: inline-block; cursor: pointer;">
               <small>dificultad: baja</small><br>
               <div class="span-hero d-flex justify-content-center align-items-center">
                 <strong class="py-0">2</strong><small>K</small>
@@ -390,6 +421,23 @@
 </section>
 <div class="deg-white"></div>
 <!-- /distances -->
+
+<!-- Modal Circuito -->
+<div class="modal fade" id="circuitModal" tabindex="-1" role="dialog" aria-labelledby="circuitModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+        <img id="circuitImage" src="" alt="Circuito" class="img-fluid circuit-modal-image">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Modal Circuito -->
 
 
 
@@ -561,6 +609,27 @@
         $('body, html').animate({
             scrollTop: $(href).offset().top - 200
         }, 1000)
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function() {
+    // Manejar clic en los enlaces de circuitos
+    $('.circuit-link').on('click', function(e) {
+      e.preventDefault();
+      var imageSrc = $(this).data('circuit-image');
+      $('#circuitImage').attr('src', imageSrc);
+      $('#circuitModal').modal('show');
+    });
+
+    // Prevenir scroll del body cuando el modal está abierto
+    $('#circuitModal').on('show.bs.modal', function () {
+      $('body').addClass('modal-open');
+    });
+
+    $('#circuitModal').on('hidden.bs.modal', function () {
+      $('body').removeClass('modal-open');
     });
   });
 </script>
