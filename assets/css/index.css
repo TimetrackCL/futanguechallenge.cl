@@ -570,6 +570,9 @@ header .hero--wrapper-flex {
   font-weight: bold;
 }
 
+#how-to-get {
+  margin-top: 0;
+}
 #how-to-get h2 {
   font-size: 40px;
 }
@@ -623,6 +626,85 @@ footer a.contact:hover {
 }
 .timetrack-footer a:hover {
   color: rgb(248, 102, 36);
+}
+
+/* ==========================================================================
+   INSTAGRAM SOCIAL SECTION
+   ========================================================================== */
+.bg-green-custom {
+  background: linear-gradient(150deg, #111B23 80%, #9dae28 100%) !important;
+}
+
+.kit-delivery__footer {
+  padding: 3rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.kit__footer-title {
+  font-family: "agendabold";
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.kit__footer-title .instagram-handle {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.kit__footer-title .instagram-handle:hover {
+  color: #9dae28;
+  border-bottom: 2px solid #9dae28;
+  text-decoration: none;
+}
+
+.kit__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.kit__social-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.5rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.kit__social-btn:hover {
+  color: #fff;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  border: 2px solid #9dae28;
 }
 
 @media (min-width: 768px) {
@@ -791,6 +873,23 @@ footer a.contact:hover {
   }
   .mt-mobile {
     margin-top: 0;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE - INSTAGRAM SECTION (Mobile)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .kit-delivery__footer {
+    padding: 2rem 0;
+  }
+  .kit__footer-title {
+    font-size: 1.3rem;
+  }
+  .kit__social-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
