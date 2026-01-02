@@ -90,6 +90,65 @@
     .modal-backdrop {
       background-color: rgba(0, 0, 0, 0.85);
     }
+    
+    /* Estilos para sección de Instagram */
+    .kit-delivery__footer {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    
+    .kit__footer-title {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+    
+    .instagram-handle {
+      color: #9dab13;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .instagram-handle:hover {
+      color: #b5b89e;
+      text-decoration: none;
+    }
+    
+    .kit__social {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .kit__social-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0.6);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      font-size: 24px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .kit__social-btn:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+      .kit__footer-title {
+        font-size: 20px;
+      }
+    }
   </style>
 </head>
 <body data-spy="scroll" data-target="#nav-desktop" data-offset="400" class="font-agenda-medium">
@@ -458,7 +517,7 @@
 
       <div class="col-12">
         <div class="efluj_iframe">
-          <iframe src="https://efluj.com/events/25-futangue-challenge-by-asics-2026/iframe" frameborder="0" scrolling="auto" width="100%">
+          <iframe id="efluj-iframe" src="https://efluj.com/events/25-futangue-challenge-by-asics-2026/iframe" frameborder="0" scrolling="no" width="100%">
           </iframe>
         </div>
       </div>
@@ -559,15 +618,15 @@
         </div>
       </div>  
 
-      <!--
+      
       <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
         <div class="text-center">
           <br class="d-block d-md-none">
           <p class="h6">Hidratador Oficial:</p>
-          <img src="assets/img/sponsors/logo-gaterode.png" alt="" class="img-sporthub img-fluid">
+          <img src="assets/img/sponsors/Logo-Gatorade.svg" alt="Logo Gatorade" class="img-sporthub img-fluid">
         </div>
       </div> 
-    -->
+    
       <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
         <div class="text-center">
           <br class="d-block d-md-none">
@@ -602,6 +661,17 @@
             once: true
         }
     );
+</script>
+
+<!-- iFrame Resizer Script -->
+<script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
+<script>
+  iFrameResize({
+    log: false,
+    checkOrigin: false,
+    heightCalculationMethod: 'lowestElement',
+    minHeight: 500
+  }, '#efluj-iframe');
 </script>
 
 <script>
