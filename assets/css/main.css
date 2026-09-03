@@ -498,27 +498,37 @@ body.is-locked { overflow: hidden; }
   color: var(--sage-light);
 }
 
-/* 04 · inscripciones */
-.signup {
-  background: var(--yellow);
+/* 04 · inscripciones — dos bandas: el título en amarillo, el widget sobre
+   blanco a ancho contenido. El documento de efluj trae fondo blanco opaco,
+   así que la banda blanca es lo que hace desaparecer el borde del iframe. */
+.signup { background: var(--yellow); }
+
+.signup__head {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: clamp(40px, 5vw, 80px);
-  align-items: start;
+  grid-template-columns: 5fr 7fr;   /* misma grilla que race, kit y place */
+  gap: clamp(48px, 6vw, 96px);
+  align-items: end;
+  padding: var(--pad-y) var(--pad-x) clamp(40px, 4.5vw, 64px);
 }
-.signup__intro { position: sticky; top: 96px; }
-.signup .h2 { margin-bottom: 28px; }
-.signup__lead { font-size: 19px; }
+.signup__head .h2 { margin: 0; }
+
+.signup__copy { max-width: 560px; }
+.signup__lead { font-size: 19px; margin-bottom: 18px; }
 .signup__minors {
   margin: 0;
   font: 400 15px/1.5 var(--sans);
   color: var(--olive);
   text-wrap: pretty;
 }
+
+.signup__embed {
+  background: #fff;
+  padding: clamp(32px, 4vw, 56px) var(--pad-x);
+}
 /* la altura la controla embed.js vía postMessage: nada de min-height aquí */
 .signup__frame {
-  background: #fff;
-  padding: 40px;
+  max-width: 1080px;
+  margin-inline: auto;
 }
 .signup__frame iframe { display: block; }
 
@@ -764,10 +774,10 @@ body.is-locked { overflow: hidden; }
   .kit__foot { margin-top: 24px; }
 
   /* 04 */
-  .signup { grid-template-columns: 1fr; gap: 24px; }
-  .signup__intro { position: static; }
-  .signup__lead { display: none; }
-  .signup__frame { padding: 16px; }
+  .signup__head { grid-template-columns: 1fr; gap: 0; padding: var(--pad-y) var(--pad-x) 28px; }
+  .signup__copy { max-width: none; margin-top: 22px; }
+  .signup__lead { font-size: 16px; margin-bottom: 14px; }
+  .signup__embed { padding: 28px 16px; }
 
   /* 05 */
   .place { grid-template-columns: 1fr; }
