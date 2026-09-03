@@ -1,32 +1,14 @@
 {
   "name": "futangue-challenge",
   "version": "1.0.0",
-  "description": "Futangue Challenge Website",
-  "main": "index.html",
+  "description": "Sitio Futangue Challenge 2027 — landing estática",
+  "private": true,
   "scripts": {
-    "start": "gulp",
-    "dev": "gulp watch",
-    "build": "gulp build",
-    "sass": "gulp sass",
-    "sass:min": "gulp sassMin"
+    "start": "browser-sync start --server --port 3000 --files \"index.html, assets/**/*\""
   },
-  "keywords": [
-    "futangue",
-    "trail",
-    "running"
-  ],
-  "author": "",
+  "keywords": ["futangue", "trail", "running"],
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^3.0.4",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-notify": "^4.0.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.69.5"
+    "browser-sync": "^3.0.4"
   }
 }

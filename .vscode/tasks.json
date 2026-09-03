@@ -2,42 +2,13 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Gulp: Watch SCSS",
+      "label": "Dev server (BrowserSync)",
       "type": "shell",
-      "command": "npx gulp",
+      "command": "npm start",
       "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      },
-      "runOptions": {
-        "runOn": "folderOpen"
-      },
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "label": "Gulp: Build",
-      "type": "shell",
-      "command": "npx gulp build",
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "shared"
-      }
-    },
-    {
-      "label": "Gulp: Compile SCSS",
-      "type": "shell",
-      "command": "npx gulp sass",
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "shared"
-      }
+      "presentation": { "reveal": "always", "panel": "new" },
+      "runOptions": { "runOn": "folderOpen" },
+      "group": { "kind": "build", "isDefault": true }
     }
   ]
 }
-
