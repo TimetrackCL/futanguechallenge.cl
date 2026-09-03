@@ -1,774 +1,313 @@
-<!doctype html>
-<html lang="es-cl">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>Futangue Challenge 2027 · Trail running en Parque Futangue, Lago Ranco</title>
+<meta name="description" content="Futangue Challenge 2027: sábado 6 de febrero en Parque Futangue, Lago Ranco. Cinco distancias de trail running —2K, 5K, 10K, 21K y 42K— entre bosque nativo, volcanes y saltos de agua de la Patagonia Norte.">
+<link rel="canonical" href="https://www.futanguechallenge.cl/">
 
-  <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Futangue Challenge">
+<meta property="og:title" content="Futangue Challenge 2027 · Correr es natural">
+<meta property="og:description" content="Sábado 6 de febrero de 2027. Cinco distancias de trail running en Parque Futangue, Lago Ranco.">
+<meta property="og:url" content="https://www.futanguechallenge.cl/">
+<meta property="og:image" content="https://www.futanguechallenge.cl/assets/img/hero/hero-banner.jpg">
+<meta name="twitter:card" content="summary_large_image">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/favicon/hojita.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon/hojita.png" sizes="any">
+<meta name="theme-color" content="#273337">
 
-  <!-- AOS Effect -->
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-  
-  <!-- Custom Style --> 
-  <link rel="stylesheet" href="assets/css/index.css">
-  <link rel="stylesheet" href="assets/css/font-futangue.css">
-  <link rel="stylesheet" href="assets/css/sponsor.css">
-  <link rel="stylesheet" href="assets/css/efluj.css?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,700;0,800;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
 
-  <link rel="icon" type="image/png" href="assets/img/favicon/hojita.png">
-
-  <title>Futangue Challenge by ASICS - 2026</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147067707-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-147067707-1');
-  </script>
-  <style>
-    .btn-fotos {
-      padding: 10px 40px;
-      font-size: 24px;
-      margin-top: 0;
-      background-color: #fff;
-      color: #616729;
-      border: 2px solid #9dab13;
-      width: 270px;
-
-    }
-    .btn-fotos:hover {
-      background-color: #b5b89e;
-      color: #fff;
-    }
-    .nav-pills .nav-link-fotos.active, .nav-pills .show>.nav-link-fotos {
-      color: #fff;
-      background-color: transparent;
-
-    }
-    .nav-link-custom-adjust {
-      padding-bottom: 25px;
-    }
-    .circuit-modal-image {
-      max-width: 100%;
-      max-height: 90vh;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-    }
-    .modal-content {
-      background-color: transparent;
-      border: none;
-    }
-    .modal-header {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 1051;
-      padding: 0;
-    }
-    .modal-header .close {
-      color: #fff;
-      font-size: 2rem;
-      font-weight: 300;
-      text-shadow: 0 0 5px rgba(0,0,0,0.5);
-      opacity: 1;
-    }
-    .modal-header .close:hover {
-      opacity: 0.8;
-    }
-    .modal-backdrop {
-      background-color: rgba(0, 0, 0, 0.85);
-    }
-    
-    /* Estilos para sección de Instagram */
-    .kit-delivery__footer {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    
-    .kit__footer-title {
-      color: #fff;
-      font-size: 28px;
-      font-weight: 600;
-      margin-bottom: 25px;
-      letter-spacing: 1px;
-    }
-    
-    .instagram-handle {
-      color: #9dab13;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    
-    .instagram-handle:hover {
-      color: #b5b89e;
-      text-decoration: none;
-    }
-    
-    .kit__social {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    
-    .kit__social-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      background-color: transparent;
-      color: rgba(255, 255, 255, 0.6);
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      border-radius: 50%;
-      font-size: 24px;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
-    
-    .kit__social-btn:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-      color: #fff;
-      border-color: rgba(255, 255, 255, 0.6);
-      text-decoration: none;
-    }
-    
-    @media (max-width: 768px) {
-      .kit__footer-title {
-        font-size: 20px;
-      }
-    }
-    
-    /* Estilos para botones GPX - Consistente con btn-inscription */
-    .btn-gpx {
-      display: inline-block;
-      padding: 10px 25px;
-      font-size: 14px;
-      font-weight: 600;
-      background-color: #9dae28;
-      color: #fff !important;
-      border: 2px solid #9dae28;
-      border-radius: 0;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-family: 'agendabold', sans-serif;
-      box-shadow: 0 4px 10px rgba(244, 230, 174, 0.5);
-    }
-    
-    .btn-gpx:hover {
-      background-color: #172A2F;
-      border-color: #172A2F;
-      color: #fff !important;
-      text-decoration: none;
-      box-shadow: 0 6px 15px rgba(244, 230, 174, 0.7);
-      transform: translateY(-2px);
-    }
-    
-    .btn-gpx i {
-      margin-right: 8px;
-      font-size: 14px;
-    }
-  </style>
 </head>
-<body data-spy="scroll" data-target="#nav-desktop" data-offset="400" class="font-agenda-medium">
+<body id="top">
 
-<!-- navMobile -->
-<nav id="nav-mobile" class="navbar navbar-expand-lg d-block d-md-none bg-green-dark-primary fixed-top">
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#custom-navbar-nav" aria-controls="custom-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="text-white"><i class="fas fa-bars"></i></span>
+<a class="skip-link" href="#info">Saltar al contenido</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="header">
+  <a class="header__logo" href="#top" aria-label="Futangue Challenge — inicio">
+    <img src="assets/img/logofutangue.png" alt="Futangue Challenge" width="180" height="52">
+  </a>
+
+  <nav class="header__nav" id="menu" aria-label="Navegación principal">
+    <a href="#info">Información</a>
+    <a href="#circuitos">Circuitos</a>
+    <a href="#kit">Kit</a>
+    <a href="#llegar">Cómo llegar</a>
+    <!-- TODO 2027: confirmar la URL de términos del evento 2027 en efluj -->
+    <a href="https://efluj.com/sporthub/events/futangue-challenge-by-asics-2027/terms" target="_blank" rel="noopener">Reglamento</a>
+    <a class="btn btn--yellow header__nav-cta" href="#inscripciones">Inscríbete</a>
+  </nav>
+
+  <a class="btn btn--yellow header__cta" href="#inscripciones">Inscríbete</a>
+
+  <button class="header__toggle" id="navToggle" type="button" aria-controls="menu" aria-expanded="false">
+    <span class="header__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    <span class="sr-only">Abrir menú</span>
   </button>
-
-  <div class="collapse navbar-collapse" id="custom-navbar-nav">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#home">
-          <i class="icon-home"></i> Home 
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#info-general">
-          <i class="icon-information"></i> Información
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#distances">
-          <i class="icon-circuit"></i> Circuitos
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      
-
-      <li class="nav-item">
-        <a class="nav-link" href="https://efluj.com/events/25-futangue-challenge-by-asics-2026/terms" target="_blank">
-          <i class="icon-document"></i> Reglamento
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mailto:contacto@sporthub.cl">
-          <i class="icon-contact"></i> Contacto
-          <span class="sr-only">(current)</span>
-        </a>
-      </li> 
-    </ul>
-  </div>
-
-</nav>
-<!-- /navMobile -->
-
-<!-- navDesktop -->
-<nav id="nav-desktop" class="navbar fixed-top d-none d-md-block">
-  <div class="container">
-    <ul class="nav nav-pills custom-navbar-nav w-100 d-flex justify-content-between align-items-end">
-      <li class="nav-item text-center">
-        <a class="nav-link nav-link-custom-adjust icon-home mb-1" href="#home">
-          <span class="span-a pt-2">Home</span> 
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link nav-link-custom-adjust icon-information mb-1" href="#info-general">
-          <span class="span-a pt-2">Información</span> 
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link nav-link-custom-adjust icon-circuit mb-1" href="#distances">
-          <span class="span-a pt-2">Circuitos</span> 
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li>
-        <a class="navbar-brand d-none d-md-block" href="index.html">
-          <img src="assets/img/logofutangue.png" alt="" class="img-fluid">
-        </a>
-      </li>
-      <!-- <li class="nav-item text-center">
-        <a class="nav-link icon-futangue mb-1" href="#sold-tickets">
-          <span class="span-a pt-2">Inscripción</span>
-          <span class="sr-only">(current)</span>
-        </a>
-      </li> -->
-      <li class="nav-item text-center dropdown">
-        <a class="nav-link nav-link-fotos icon-futangue mb-1 dropdown-toggle" href="" data-toggle="dropdown" >
-          <span class="span-a pt-2">FOTOS</span>
-        </a>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" target="_blank" href="https://www.flickr.com/photos/200059896@N03/albums/72177720314743491/">Altas Cumbres 21k y 32k</a>
-            <a class="dropdown-item" target="_blank" href="https://www.flickr.com/photos/200059896@N03/albums/72177720314741710/">60k - Riñinahue y meta</a>
-            <a class="dropdown-item" target="_blank" href="https://www.flickr.com/photos/200059896@N03/albums/72177720314745571/">Cerro Mayo</a>
-            <a class="dropdown-item" target="_blank" href="https://www.flickr.com/photos/200059896@N03/albums/72177720314743695/">Pas el cruce y laguna Pitreño</a>
-            <a class="dropdown-item" target="_blank" href="https://www.flickr.com/photos/200059896@N03/albums/72177720314747171/">Base Camp</a>
-
-        </div>
-    
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link nav-link-custom-adjust icon-document mb-1" href="https://efluj.com/events/25-futangue-challenge-by-asics-2026/terms" target="_blank">
-          <span class="span-a pt-2">Reglamento</span>
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link icon-contact mb-1 nav-link-custom-adjust" href="mailto:contacto@sporthub.cl">
-          <span class="span-a pt-2">Contacto</span> 
-          <span class="sr-only">(current)</span>
-        </a>
-      </li> 
-    </ul>
-  </div>
-</nav>
-<!-- /navDesktop -->
-
-
-
-<!-- start header -->
-<header id="home" class="text-center overflow-hidden">
-  <img src="assets/img/slide/BANNER-1920x1080px-100.jpg" class="w-100 d-none d-md-block">
-  <img src="assets/img/slide/BANNER-MOBILE.jpg" class="w-100 d-block d-md-none">
-
-  <div class="hero--wrapper d-flex justify-content-md-center">
-    <div class="container">
-      <div class="hero--wrapper-flex">
-        <div>
-          <div class="d-flex justify-content-start">
-            <a class="d-block d-md-none" href="/">
-              <img src="assets/img/logofutangue.png" alt="Logo Futangue Challenge" width="200" class="">
-            </a>
-          </div>
-
-          <h1 class="hero-title--primary d-none d-md-block" data-aos="fade-right">FUTANGUE CHALLENGE</h1>
-          <h1 class="hero-title--primary-2 d-block d-md-none" data-aos="fade-right">FUTANGUE CHALLENGE</h1> 
-
-          <h2 class="hero-title--secondary d-none d-md-block" data-aos="fade-right"><strong class="text-white">CORRER</strong> ES <strong class="text-green-light-primary">NATURAL</strong></h2>
-          <h2 class="hero-title--secondary-2 d-block d-md-none" data-aos="fade-right" style="margin-bottom: 2rem;"><strong class="text-white">CORRER</strong> ES <strong class="text-green-light-primary">NATURAL</strong></h2>
-
-          <div class="d-flex">
-            <a href="#sold-tickets" class="btn btn-inscription" >INSCRÍBETE</a>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-  </div>
-
-  <div id="montana"></div>
 </header>
-<div class="deg-white"></div>
-<!-- end header -->
 
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <picture>
+    <source type="image/webp" srcset="assets/img/hero/hero-banner.webp">
+    <img class="hero__media" src="assets/img/hero/hero-banner.jpg" alt="" width="1920" height="1080" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="hero__scrim"></div>
 
-
-<!-- info-general -->
-<section id="info-general" data-aos="fade-up">
-  <div class="container text-green-dark-secondary">
-    <div class="row my-5">
-      <div class="col-12 col-md-6 text-center">
-          <img src="assets/img/info-general-2026.png" alt="" class="principal mt-2">
-      </div>
-
-      <div class="col-12 col-md-6 col-info-date">
-        <small class="date text-green-light-primary font-agenda-medium-italic">Sábado 7 de Febrero, 2026</small>
-        <h1 class="color-green-primary">Futangue Challenge <br> <small class="text-green-light-primary sub-title">¡ Correr es Natural !</small></h1>
-        <p>
-          <strong>FUTANGUE CHALLENGE by ASICS,</strong> la carrera más hermosa de la Patagonia Norte regresa con una versión renovada Invitándote a vivir una experiencia única recorriendo senderos entre bosques, volcanes y saltos de agua de los Andes patagónicos chilenos. 
-        </p>
-        
-        <div class="d-flex flex-column-reverse align-items-end align-items-md-end ">
-          <a href="https://efluj.com/events/25-futangue-challenge-by-asics-2026/terms" class="btn-info-futangue" target="_blank"><i class="fas fa-angle-double-right mr-2"></i> Descargar Reglamento</a>        
-          <a href="https://f000.backblazeb2.com/file/sporthub-static/FC25_-_GUIA_TECNICA2026.pdf" class="btn-info-futangue" target="_blank"><i class="fas fa-file-pdf mr-2"></i> Descargar Guía Técnica</a>
-        </div>
-        <img src="assets/img/ramita.png" alt="" class="ramita">
-      </div>
+  <div class="hero__body">
+    <div class="hero__intro">
+      <p class="eyebrow eyebrow--yellow hero__eyebrow">Edición 2027 · Parque Futangue</p>
+      <h1 class="hero__title">Futangue<br>Challenge</h1>
+      <p class="hero__claim">Correr es natural</p>
     </div>
 
-    <div class="row my-5">
-      <div class="col-12">
-        <div class="col-md-2 d-none d-md-block"></div>
-        <div class="col-12 col-md-6 d-flex flex-column my-4 mx-0">
-          <div>
-            <h2 class="text-green-light-primary mb-0">ENTREGA DE KIT</h2>
-            <img src="assets/img/ramita.png" alt="" class="ramita">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <p class="">
-              <b>El kit de competencia, para todas las distancias, incluye:</b>
-              <ul>
-                <li><img src="assets/img/favicon/hojita.png" alt="" class="img-sold"> Polera técnica oficial de Futangue Challenge</li>
-                <li><img src="assets/img/favicon/hojita.png" alt="" class="img-sold"> Morral</li>
-                <li><img src="assets/img/favicon/hojita.png" alt="" class="img-sold"> Nº de competencia y Chip</li>
-                <li><img src="assets/img/favicon/hojita.png" alt="" class="img-sold"> Medalla de finalista (*)</li>
-              </ul>
-              <p class="text-green-dark-secondary"><small>(*) solo la obtienen quienes completen trazado dentro de los horarios establecidos</small></p>
-            </p>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="d-flex">
-              <p class="mr-date"><span class="text-green-light-primary"><b><i class="fa fa-calendar-check" aria-hidden="true"></i> FECHA:</b></span><br> Viernes 6 de febrero 2026</p>
-              <p><span class="text-green-light-primary"><b><i class="fa fa-clock" aria-hidden="true"></i> HORARIO:</b></span><br> Entre las 14:00 y 20:00 horas.</p>
-            </div>
-            <p><span class="text-green-light-primary"><b><i class="fa fa-map" aria-hidden="true"></i> LUGAR:</b></span><br> <a href="https://maps.app.goo.gl/8NHeNsxECEbTW2eM7" target="_blank">Recepción Parque Futangue, Ingreso Riñinahue</a></p>
-          </div>
-        </div>
+    <div class="hero__strip">
+      <div class="hero__strip-fact">
+        <p class="label label--muted">Fecha</p>
+        <p class="hero__fact-value hero__fact-value--caps">Sáb 6 feb</p>
       </div>
+      <div class="hero__strip-fact hero__strip-fact--end">
+        <p class="label label--muted">Distancias</p>
+        <p class="hero__fact-value">2 · 5 · 10 · 21 · 42K</p>
+      </div>
+    </div>
+    <a class="btn btn--yellow btn--block btn--lg hero__cta-mobile" href="#inscripciones">Asegura tu cupo</a>
+
+    <div class="hero__card">
+      <div class="hero__fact">
+        <p class="label label--muted">Fecha</p>
+        <p class="hero__fact-value hero__fact-value--caps">Sáb 6 de febrero</p>
+      </div>
+      <div class="hero__fact">
+        <p class="label label--muted">Distancias</p>
+        <p class="hero__fact-value">2K · 5K · 10K · 21K · 42K</p>
+      </div>
+      <a class="btn btn--yellow btn--block btn--lg" href="#inscripciones">Asegura tu cupo</a>
     </div>
   </div>
 </section>
-<!-- /info-general -->
 
-<!-- sponsor 
-<section id="sponsor">
-  <div class="container">
-    <div class="row my-5">
-      <div class="col-md-2 d-none d-md-block"></div>
-      <div class="col-12 col-md-3 d-flex flex-column justify-content-center align-items-center my-4 mx-0">
-        <div>
-          <h2 class="text-green-light-primary mb-0">SPONSORS</h2>
-          <img src="assets/img/ramita.png" alt="" class="ramita">
-        </div>
-      </div>
-      <div class="col-12 col-md-3 col-sponsor">
-        <img src="assets/img/sponsors/" alt="" class="shadow px-2">
-      </div>
-      <div class="col-12 col-md-3 col-sponsor">
-        <img src="assets/img/sponsors/" alt="" class="shadow px-2">
+<!-- ===================== 01 · LA CARRERA ===================== -->
+<section class="section race" id="info">
+  <div class="race__intro">
+    <img class="race__photo" src="assets/img/hero/foto-web.jpg" alt="Corredor en los senderos de Parque Futangue" loading="lazy" decoding="async" width="678" height="756">
+    <div class="race__text">
+      <p class="eyebrow">01 — La carrera</p>
+      <h2 class="h2">La carrera más hermosa del sur de Chile</h2>
+      <p class="lead">Cinco distancias para recorrer senderos entre bosques milenarios, volcanes y saltos de agua de los Andes patagónicos. Trail running en uno de los parques privados más biodiversos de Chile.</p>
+      <p class="note">Reglamento y guía técnica actualizados para la edición 2027.</p>
+      <div class="race__actions">
+        <!-- TODO 2027: confirmar la URL de términos del evento 2027 en efluj -->
+        <a class="btn btn--outline" href="https://efluj.com/sporthub/events/futangue-challenge-by-asics-2027/terms" target="_blank" rel="noopener">Reglamento</a>
+        <!-- TODO 2027: publicar la guía técnica 2027 y reemplazar por
+             <a class="btn btn--outline" href="URL_GUIA_2027" target="_blank" rel="noopener">Guía técnica</a>
+             (la guía 2026 vivía en https://f000.backblazeb2.com/file/sporthub-static/FC25_-_GUIA_TECNICA2026.pdf) -->
+        <span class="btn btn--outline is-disabled" aria-disabled="true">Guía técnica · pronto</span>
       </div>
     </div>
+  </div>
+
+  <ul class="stats">
+    <li class="stats__item">
+      <p class="stats__value">13.500 <span>ha</span></p>
+      <p class="label">Parque privado protegido</p>
+    </li>
+    <li class="stats__item">
+      <p class="stats__value">5</p>
+      <p class="label">Distancias · 2K a 42K</p>
+    </li>
+    <li class="stats__item">
+      <p class="stats__value">100<span>%</span></p>
+      <p class="label">Sendero en bosque nativo</p>
+    </li>
+    <li class="stats__item">
+      <p class="stats__value">Lago Ranco</p>
+      <p class="label">Región de Los Ríos</p>
+    </li>
+  </ul>
+</section>
+
+<!-- ===================== 02 · CIRCUITOS ===================== -->
+<section class="section circuits" id="circuitos">
+  <div class="circuits__head">
+    <div>
+      <p class="eyebrow eyebrow--yellow">02 — Circuitos</p>
+      <h2 class="h2">Elige tu<br>distancia</h2>
+    </div>
+    <p class="circuits__note">Sábado 6 de febrero 2027. Largadas escalonadas desde Base Camp Riñinahue.</p>
+  </div>
+
+  <div class="circuits__grid">
+    <article class="circuit">
+      <p class="circuit__level"><span class="only-desktop">Dificultad </span>Avanzada</p>
+      <button class="circuit__km" type="button" data-map="assets/img/circuits/2027/CIRCUITO-42KM.jpg" data-label="Circuito 42K &middot; Avanzada" aria-label="Ver el mapa del circuito 42K">42<span>K</span></button>
+      <p class="circuit__bars" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></p>
+      <p class="circuit__dplus">&asymp; 2.600 <span>D+</span></p>
+      <button class="circuit__map" type="button" data-map="assets/img/circuits/2027/CIRCUITO-42KM.jpg" data-label="Circuito 42K &middot; Avanzada"><span class="only-desktop">Ver </span>mapa <span class="circuit__map-icon" aria-hidden="true">&#8599;</span></button>
+    </article>
+
+    <article class="circuit">
+      <p class="circuit__level"><span class="only-desktop">Dificultad </span>Media</p>
+      <button class="circuit__km" type="button" data-map="assets/img/circuits/2027/CIRCUITO-21K.jpg" data-label="Circuito 21K &middot; Media" aria-label="Ver el mapa del circuito 21K">21<span>K</span></button>
+      <p class="circuit__bars" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></p>
+      <p class="circuit__dplus">913 <span>D+</span></p>
+      <button class="circuit__map" type="button" data-map="assets/img/circuits/2027/CIRCUITO-21K.jpg" data-label="Circuito 21K &middot; Media"><span class="only-desktop">Ver </span>mapa <span class="circuit__map-icon" aria-hidden="true">&#8599;</span></button>
+    </article>
+
+    <article class="circuit">
+      <p class="circuit__level"><span class="only-desktop">Dificultad </span>Baja</p>
+      <button class="circuit__km" type="button" data-map="assets/img/circuits/2027/CIRCUITO-10K.jpg" data-label="Circuito 10K &middot; Baja" aria-label="Ver el mapa del circuito 10K">10<span>K</span></button>
+      <p class="circuit__bars" aria-hidden="true"><span class="on"></span><span class="on"></span><span></span><span></span></p>
+      <p class="circuit__dplus">312 <span>D+</span></p>
+      <button class="circuit__map" type="button" data-map="assets/img/circuits/2027/CIRCUITO-10K.jpg" data-label="Circuito 10K &middot; Baja"><span class="only-desktop">Ver </span>mapa <span class="circuit__map-icon" aria-hidden="true">&#8599;</span></button>
+    </article>
+
+    <article class="circuit">
+      <p class="circuit__level"><span class="only-desktop">Dificultad </span>Baja</p>
+      <button class="circuit__km" type="button" data-map="assets/img/circuits/2027/CIRCUITO-5K.jpg" data-label="Circuito 5K &middot; Baja" aria-label="Ver el mapa del circuito 5K">5<span>K</span></button>
+      <p class="circuit__bars" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span></p>
+      <p class="circuit__dplus">101 <span>D+</span></p>
+      <button class="circuit__map" type="button" data-map="assets/img/circuits/2027/CIRCUITO-5K.jpg" data-label="Circuito 5K &middot; Baja"><span class="only-desktop">Ver </span>mapa <span class="circuit__map-icon" aria-hidden="true">&#8599;</span></button>
+    </article>
+
+    <article class="circuit">
+      <p class="circuit__level"><span class="only-desktop">Dificultad </span>Familiar</p>
+      <button class="circuit__km" type="button" data-map="assets/img/circuits/2027/CIRCUITO-2K-KIDS.jpg" data-label="Circuito 2K &middot; Familiar" aria-label="Ver el mapa del circuito 2K">2<span>K</span></button>
+      <p class="circuit__bars" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span></p>
+      <p class="circuit__dplus">48 <span>D+</span></p>
+      <button class="circuit__map" type="button" data-map="assets/img/circuits/2027/CIRCUITO-2K-KIDS.jpg" data-label="Circuito 2K &middot; Familiar"><span class="only-desktop">Ver </span>mapa <span class="circuit__map-icon" aria-hidden="true">&#8599;</span></button>
+    </article>
+  </div>
+
+  <p class="circuits__foot">* Desniveles referenciales; se actualizan con el trazado definitivo 2027.</p>
+</section>
+
+<!-- ===================== 03 · KIT ===================== -->
+<section class="section kit" id="kit">
+  <div class="kit__info">
+    <p class="eyebrow">03 — Entrega de kit</p>
+    <h2 class="h2">Viernes 5 de febrero</h2>
+    <dl class="kit__rows">
+      <div class="kit__row">
+        <dt class="label">Horario</dt>
+        <dd class="kit__row-value">14:00 – 20:00 h</dd>
+      </div>
+      <div class="kit__row">
+        <dt class="label">Lugar</dt>
+        <dd class="kit__row-value">Recepción Parque Futangue<br>
+          <a class="kit__map-link" href="https://maps.app.goo.gl/8NHeNsxECEbTW2eM7" target="_blank" rel="noopener">Ingreso Riñinahue → ver en mapa</a>
+        </dd>
+      </div>
+    </dl>
+  </div>
+
+  <div class="kit__panel">
+    <p class="label label--yellow">El kit de competencia incluye</p>
+    <ul class="kit__list">
+      <li>Polera técnica oficial</li>
+      <li>Morral</li>
+      <li>Nº de competencia y chip</li>
+      <li>Medalla de finalista*</li>
+    </ul>
+    <p class="kit__foot">* Solo para quienes completen el trazado dentro de los horarios establecidos.</p>
   </div>
 </section>
- /sponsor -->
 
+<!-- ===================== 04 · INSCRIPCIONES ===================== -->
+<section class="section signup" id="inscripciones">
+  <div class="signup__intro">
+    <p class="eyebrow eyebrow--olive">04 — Inscripciones</p>
+    <h2 class="h2">Asegura<br>tu lugar</h2>
+    <p class="lead signup__lead">Inscripciones abiertas con precios preferenciales por etapa. Cupos limitados por distancia.</p>
+    <p class="signup__minors"><strong>Menores:</strong> de 7 a 14 años siempre acompañados de un adulto en 2K. De 15 a 17 años pueden competir individualmente en 5K y 10K con consentimiento de sus padres.</p>
+  </div>
 
-
-<!-- distances -->
-<section id="distances" data-aos="fade-up">
-  <div class="bg-green-dark-primary">
-    <div class="container">
-      <div class="row py-4">
-          <div class="col-12 text-center">
-            <h2 class="text-white mb-0 mt-2">CIRCUITOS - Sábado 7 de Febrero 2026</h2>
-          </div>
-  
-  
-          <!-- 38 KM -->
-          <div class="col-6 col-md-4 text-center py-3">
-            <a href="#" class="circuit-link pb-2" data-circuit-image="assets/circuits/CIRCUITO-38K-100.jpg" style="text-decoration: none; display: inline-block; cursor: pointer;">
-              <small>dificultad: avanzada</small><br>
-              <div class="span-hero d-flex justify-content-center align-items-center">
-                <strong>38</strong><small>K</small>
-              </div>
-              <span class="span-bot">
-                <strong>2.458</strong>
-                D
-                <strong class="distance-mas">+</strong>
-              </span>
-            </a>
-            <div class="mt-3">
-              <a href="assets/gpx/2026/38k_FUTANGUE_CHALLENGE_2026__2_2_26.gpx" download class="btn-gpx">
-                <i class="fas fa-download"></i> Descargar GPX
-              </a>
-            </div>
-          </div>
-  
-  
-          <!-- 21 KM -->
-          <div class="col-6 col-md-4 text-center py-3">
-            <a href="#" class="circuit-link pb-2" data-circuit-image="assets/circuits/CIRCUITO-21K-100.jpg" style="text-decoration: none; display: inline-block; cursor: pointer;">
-              <small>dificultad: media</small><br>
-              <div class="span-hero d-flex justify-content-center align-items-center">
-                <strong>21</strong><small>K</small>
-              </div>
-              <span class="span-bot">
-                <strong>913</strong>
-                D
-                <strong class="distance-mas">+</strong>
-              </span>  
-            </a>
-            <div class="mt-3">
-              <a href="assets/gpx/2026/21.5k_Futangue_Challenge_2026_VF.gpx" download class="btn-gpx">
-                <i class="fas fa-download"></i> Descargar GPX
-              </a>
-            </div>
-          </div>
-  
-  
-          <!-- 10 KM -->
-          <div class="col-6 col-md-4 text-center py-3">
-            <a href="#" class="circuit-link pb-2" data-circuit-image="assets/circuits/CIRCUITO-10K-100.jpg" style="text-decoration: none; display: inline-block; cursor: pointer;">
-              <small>dificultad: baja</small><br>
-              <div class="span-hero d-flex justify-content-center align-items-center">
-                <strong class="py-0">10</strong><small>K</small>
-              </div>
-              <span class="span-bot">
-                <strong>312</strong>
-                D
-                <strong class="distance-mas">+</strong>
-              </span>  
-            </a>
-            <div class="mt-3">
-              <a href="assets/gpx/2026/10K_FUTANGUECHALLENGUE_VF.gpx" download class="btn-gpx">
-                <i class="fas fa-download"></i> Descargar GPX
-              </a>
-            </div>
-          </div>
-
-          <!-- 5 KM -->
-          <div class="col-6 col-md-4 text-center py-3">
-            <a href="#" class="circuit-link pb-2" data-circuit-image="assets/circuits/CIRCUITO-5K-100.jpg" style="text-decoration: none; display: inline-block; cursor: pointer;">
-              <small>dificultad: baja</small><br>
-              <div class="span-hero d-flex justify-content-center align-items-center">
-                <strong class="py-0">5</strong><small>K</small>
-              </div>
-              <span class="span-bot">
-                <strong>101</strong>
-                D
-                <strong class="distance-mas">+</strong>
-              </span>  
-            </a>
-          </div>
-
-          <!-- 2 KM -->
-          <div class="col-6 col-md-4 text-center py-3">
-            <a href="#" class="circuit-link pb-2" data-circuit-image="assets/circuits/CIRCUITO-2K-100.jpg" style="text-decoration: none; display: inline-block; cursor: pointer;">
-              <small>dificultad: baja</small><br>
-              <div class="span-hero d-flex justify-content-center align-items-center">
-                <strong class="py-0">2</strong><small>K</small>
-              </div>
-              <span class="span-bot">
-                <strong>48</strong>
-                D
-                <strong class="distance-mas">+</strong>
-              </span>  
-            </a>
-          </div>
-      </div>
-    </div>
+  <div class="signup__frame">
+    <iframe data-efluj-embed
+        src="https://efluj.com/sporthub/events/futangue-challenge-by-asics-2027/iframe"
+        style="width:100%;border:0;" title="Inscripción Futangue Challenge by ASICS 2027"></iframe>
+    <script src="https://efluj.com/embed.js" async></script>
   </div>
 </section>
-<div class="deg-white"></div>
-<!-- /distances -->
 
-<!-- Modal Circuito -->
-<div class="modal fade" id="circuitModal" tabindex="-1" role="dialog" aria-labelledby="circuitModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-    <div class="modal-content">
-      <div class="modal-header border-0">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body p-0 d-flex justify-content-center align-items-center">
-        <img id="circuitImage" src="" alt="Circuito" class="img-fluid circuit-modal-image">
-      </div>
-    </div>
+<!-- ===================== 05 · CÓMO LLEGAR ===================== -->
+<section class="place" id="llegar">
+  <div class="place__info">
+    <p class="eyebrow eyebrow--yellow">05 — Cómo llegar</p>
+    <h2 class="h2">Parque Futangue</h2>
+    <p class="place__text">Ribera sur del Lago Ranco, Región de Los Ríos. A 2 h de Valdivia y 3 h de Puerto Montt por ruta pavimentada hasta Riñinahue.</p>
+    <a class="btn btn--outline-yellow" href="https://maps.app.goo.gl/8NHeNsxECEbTW2eM7" target="_blank" rel="noopener">Abrir en Google Maps</a>
   </div>
-</div>
-<!-- /Modal Circuito -->
-
-
-
-<!-- sold-tickets -->
-<section id="sold-tickets" data-aos="fade-up" class="py-section">
-  <div class="container py-4">
-    <div class="row align-items-center">
-      <div class="col-12 d-flex align-items-start flex-column mb-3">
-        <h2 class="text-green-light-primary mb-0">INSCRIPCIONES</h2>
-        <img src="assets/img/ramita.png" alt="" class="ramita mt-2 mb-3">
-        <p>
-          ¡No te pierdas la oportunidad de asegurar TÚ lugar en el <strong class="text-green-light-primary">Futangue Challenge by ASICS</strong> a precios especiales!
-        </p>
-        <p class="text-green-dark-secondary">
-          <small><strong>Importante:</strong> Los corredores desde los 7 años hasta los 14 años deben ir siempre acompañados con un adulto responsable en la distancia de 2K. Los mayores de 15 hasta 17 años pueden competir de forma individual bajo consentimiento de sus padres, sólo en las distancias 5K y 10K.</small>
-        </p>
-      </div>
-
-      <div class="col-12">
-        <div class="efluj_iframe">
-          <iframe id="efluj-iframe" src="https://efluj.com/events/25-futangue-challenge-by-asics-2026/iframe" frameborder="0" scrolling="no" width="100%">
-          </iframe>
-        </div>
-      </div>
-      
-      
-
-    </div>
+  <div class="place__map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12165.802659202263!2d-72.2272155!3d-40.3323477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c1557051aea27ac!2sParque%20Futangue!5e0!3m2!1ses!2scl!4v1567694687958!5m2!1ses!2scl"
+      title="Parque Futangue en Google Maps" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
-<!-- /sold-tickets -->
 
-
-<!-- social-instagram -->
-<section id="social-instagram" data-aos="fade-up">
-  <div class="kit-delivery__footer bg-green-dark-primary">
-    <h3 class="kit__footer-title" data-aos="fade-up" data-aos-delay="200">
-      SÍGUENOS EN INSTAGRAM <a href="https://www.instagram.com/futangue_challenge/?hl=es" target="_blank" class="instagram-handle">@futangue_challenge</a>
-    </h3>
-    <div class="kit__social" data-aos="fade-down" data-aos-delay="200">
-      <a href="https://www.instagram.com/futangue_challenge/?hl=es" target="_blank" class="kit__social-btn">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
+<!-- ===================== ALIADOS ===================== -->
+<section class="allies" aria-label="Aliados del Futangue Challenge">
+  <div class="ally">
+    <p class="ally__role">Organiza y produce</p>
+    <img class="ally__logo" src="assets/img/sponsors/Logo-SportHub.svg" alt="SportHub" loading="lazy">
+  </div>
+  <div class="ally">
+    <p class="ally__role">Auspicia</p>
+    <img class="ally__logo" src="assets/img/sponsors/Logo-Asics.svg" alt="ASICS" loading="lazy">
+  </div>
+  <div class="ally">
+    <p class="ally__role">Media partner</p>
+    <img class="ally__logo" src="assets/img/sponsors/Logo-TheLastLap.svg" alt="The Last Lap" loading="lazy">
+  </div>
+  <div class="ally">
+    <p class="ally__role">Fotografía oficial</p>
+    <img class="ally__logo" src="assets/img/sponsors/FOTO_OFICIAL-FOCO_RACE.svg" alt="Foco Race" loading="lazy">
+  </div>
+  <div class="ally">
+    <p class="ally__role">Hidratador oficial</p>
+    <img class="ally__logo" src="assets/img/sponsors/Logo-Gatorade.svg" alt="Gatorade" loading="lazy">
+  </div>
+  <div class="ally">
+    <p class="ally__role">Auto oficial</p>
+    <img class="ally__logo" src="assets/img/sponsors/Logo-VW.svg" alt="Volkswagen" loading="lazy">
+  </div>
+  <div class="ally">
+    <p class="ally__role">Colaboran</p>
+    <img class="ally__logo ally__logo--ink" src="assets/img/sponsors/Logo-ParqueFutangue.svg" alt="Parque Futangue" loading="lazy">
   </div>
 </section>
-<!-- /social-instagram -->
 
-
-<!-- kit -->
-<section id="kit" data-aos="fade-up">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 px-0">
-        <!-- <img src="assets/img/kit-desktop.jpg" alt="" class="img-fluid"> -->
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /kit -->
-
-
-<!-- how-to-get -->
-<section id="how-to-get" class="bg-green-light-primary" data-aos="fade-up">
-  <div class="container-fluid">
-   <div class="row mt-0">
-     <div class="col-12 col-md-3 offset-md-2 d-flex mb-2 align-items-center htg-col-title my-4">
-      <div class="text-left">
-        <h2 class="text-white mb-0">¿Cómo Llegar?</h2>
-        <img src="assets/img/ramita-white.png" alt="" class="ramita">
-      </div>
-     </div>
-     <div class="col-12 col-md-7 d-flex align-items-center justify-content-between px-0">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12165.802659202263!2d-72.2272155!3d-40.3323477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c1557051aea27ac!2sParque%20Futangue!5e0!3m2!1ses!2scl!4v1567694687958!5m2!1ses!2scl" width="" height="300" frameborder="0" style="border:0;" allowfullscreen="" class="w-100"></iframe>
-     </div>
-   </div>
-  </div>
-</section>
-<!-- /how-to-get -->
-
-<!-- footer -->
-<footer id="contact" class="bg-green-dark-primary py-4" data-aos="fade-up">
-  <div class="container">
-    <div class="row text-white">
-      <!-- <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
-        <a href="index.html">
-          <img src="assets/img/logofutangue.png" alt="" class="img-footer">
-        </a>
-      </div> -->
-
-      <div class="col-12 col-md-2 d-flex align-items-start justify-content-center">
-        <div class="text-center">
-          <br class="d-block d-md-none">
-          <p class="h6">Organiza y Produce:</p>
-          <img src="assets/img/sponsors/Logo-SportHub.svg" alt="Logo SportHub" class="img-sporthub img-fluid">
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-        <div class="text-center">
-          <br class="d-block d-md-none">
-          <p class="h6">Media Partner:</p>
-          <img src="assets/img/sponsors/Logo-TheLastLap.svg" alt="Logo The Last Lap" class="img-sporthub img-fluid">
-        </div>
-      </div>
-
-      <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-        <div class="text-center">
-          <br class="d-block d-md-none">
-          <p class="h6">Auspicia:</p>
-          <img src="assets/img/sponsors/Logo-Asics.svg" alt="Logo Asics" class="img-sporthub img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-        <div class="text-center">
-          <br class="d-block d-md-none">
-          <p class="h6">Fotografías Oficial:</p>
-          <img src="assets/img/sponsors/FOTO_OFICIAL-FOCO_RACE.svg" alt="Logo foco race" class="img-sporthub img-fluid">
-        </div>
-      </div>  
-
-      
-      <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-        <div class="text-center">
-          <br class="d-block d-md-none">
-          <p class="h6">Hidratador Oficial:</p>
-          <img src="assets/img/sponsors/Logo-Gatorade.svg" alt="Logo Gatorade" class="img-sporthub img-fluid">
-        </div>
-      </div> 
-    
-      <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-        <div class="text-center">
-          <br class="d-block d-md-none">
-          <p class="h6">Auto Oficial:</p>
-          <img src="assets/img/sponsors/Logo-VW.svg" alt="Logo Volkswagen" class="img-sporthub img-fluid">
-        </div>
-      </div>       
-      
-    </div>
-  </div>
-  <div class="timetrack-footer">
-    <span>Powered By <a href="https://www.timetrack.cl/" target="_blank">Timetrack</a></span>
-  </div>
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <img class="footer__logo" src="assets/img/logofutangue.png" alt="Futangue Challenge" loading="lazy" width="125" height="36">
+  <nav class="footer__links" aria-label="Enlaces de contacto">
+    <a href="https://www.instagram.com/futangue_challenge/?hl=es" target="_blank" rel="noopener">@futangue_challenge</a>
+    <a href="mailto:contacto@sporthub.cl">Contacto</a>
+  </nav>
+  <a class="footer__by" href="https://www.timetrack.cl" target="_blank" rel="noopener">Powered by Timetrack</a>
 </footer>
-<!-- /footer -->
 
+<!-- ===================== LIGHTBOX DE MAPAS ===================== -->
+<dialog class="lightbox" id="mapModal" aria-labelledby="mapModalTitle">
+  <div class="lightbox__panel">
+    <div class="lightbox__head">
+      <p class="lightbox__title" id="mapModalTitle"></p>
+      <button class="lightbox__close" id="mapModalClose" type="button" aria-label="Cerrar mapa">&times;</button>
+    </div>
+    <img class="lightbox__img" id="mapModalImg" alt="">
+    <a class="lightbox__full" id="mapModalFull" target="_blank" rel="noopener">Abrir en tamaño completo &#8599;</a>
+  </div>
+</dialog>
 
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-<!-- AOS Script -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-            duration: 1000,
-            once: true
-        }
-    );
-</script>
-
-<!-- iFrame Resizer Script -->
-<script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.2/js/iframeResizer.min.js"></script>
-<script>
-  iFrameResize({
-    log: false,
-    checkOrigin: false,
-    heightCalculationMethod: 'lowestElement',
-    minHeight: 500
-  }, '#efluj-iframe');
-</script>
-
-<script>
-  var scroll = $(window).scrollTop();   
-  $(window).scroll(function(event) 
-  {
-      var scroll = $(window).scrollTop();
-
-      if(scroll!=0){
-          $('#nav-desktop').addClass("bg-green-dark-primary");
-      }else{
-          $('#nav-desktop').removeClass("bg-green-dark-primary");
-      }
-  });
-</script>
-
-<script>
-  $(function() {
-    $('.nav a').click(function(){
-        var href = $(this).attr("href");
-        $('body, html').animate({
-            scrollTop: $(href).offset().top - 200
-        }, 1000)
-    });
-  });
-</script>
-
-<script>
-  $(document).ready(function() {
-    // Manejar clic en los enlaces de circuitos
-    $('.circuit-link').on('click', function(e) {
-      e.preventDefault();
-      var imageSrc = $(this).data('circuit-image');
-      $('#circuitImage').attr('src', imageSrc);
-      $('#circuitModal').modal('show');
-    });
-
-    // Prevenir scroll del body cuando el modal está abierto
-    $('#circuitModal').on('show.bs.modal', function () {
-      $('body').addClass('modal-open');
-    });
-
-    $('#circuitModal').on('hidden.bs.modal', function () {
-      $('body').removeClass('modal-open');
-    });
-  });
-</script>
-
-
-
-
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>

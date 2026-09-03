@@ -1,90 +1,64 @@
-# Futangue Challenge - Website
+# Futangue Challenge — Sitio 2027
 
-## 🚀 Inicio Rápido
+Landing estática de la edición 2027, reimplementada a partir del diseño
+**"Futangue Landing 2027"** (Claude Design, proyecto `Rediseño Futangue Challenge 2027`).
 
-### Requisitos Previos
-- Node.js instalado
+Sin build: HTML, CSS y JS planos. Se publica tal cual está el repositorio.
 
-### Instalación
+## 🚀 Desarrollo
 
 ```bash
 npm install
+npm start          # http://localhost:3000 con live reload
 ```
 
-## 📜 Scripts Disponibles
+BrowserSync sirve la raíz y recarga ante cambios en `index.html` y `assets/**`.
+Cualquier servidor estático sirve igual (`python3 -m http.server`, `npx serve`, etc.).
 
-### Desarrollo con Live Reload (Recomendado)
-```bash
-npm start
-```
-Inicia el servidor en http://localhost:3000 con:
-- ✅ Compilación automática de SCSS a CSS
-- ✅ Live reload del navegador
-- ✅ Observación de cambios en HTML y SCSS
-
-### Solo Watch (sin servidor)
-```bash
-npm run dev
-```
-Compila SCSS y observa cambios sin servidor
-
-### Compilar SCSS una vez
-```bash
-npm run sass
-```
-
-### Compilar SCSS + Minificado
-```bash
-npm run build
-```
-Genera archivos CSS normales y minificados
-
-### Solo Minificado
-```bash
-npm run sass:min
-```
-
-## 📁 Estructura de Archivos
+## 📁 Estructura
 
 ```
+index.html
 assets/
-  css/
-    index.scss      ← Edita este archivo
-    index.css       ← Generado automáticamente
-    index.css.map   ← Source map
+  css/main.css             ← estilos completos del sitio
+  js/main.js               ← header al hacer scroll, menú móvil, lightbox de mapas
+  img/
+    logofutangue.png       ← logo (header y footer)
+    favicon/               ← hojita.svg · hojita.png
+    hero/                  ← hero-banner.webp (+ .jpg fallback) · foto-web.jpg
+    circuits/2027/         ← mapas que abre el lightbox
+    sponsors/              ← 7 logos SVG
 ```
 
-## ⚙️ Configuración de Gulp
+## 🎨 Sistema visual
 
-El proyecto usa:
-- **Gulp 4**: Automatización de tareas
-- **SASS/SCSS**: Preprocesador CSS
-- **BrowserSync**: Live reload
-- **Autoprefixer**: Prefijos CSS automáticos
-- **CleanCSS**: Minificación
+| Token | Valor | Uso |
+|---|---|---|
+| `--cream` | `#f3f0e6` | fondo base |
+| `--ink` | `#273337` | texto y secciones oscuras |
+| `--yellow` | `#d8ca00` | acento / CTA |
+| `--green` | `#576c5a` | panel de kit, textos secundarios |
+| `--sage` | `#95a596` | texto sobre fondo oscuro |
 
-## 🔧 Solución de Problemas
+Tipografías: **Barlow Condensed** (títulos) y **Barlow** (texto), desde Google Fonts.
+Breakpoint móvil: **900px**.
 
-### Error: "scripts is disabled"
-Si aparece este error en PowerShell:
-```powershell
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned -Force
-```
+## 🔌 Integraciones
 
-### Puerto 3000 ocupado
-Edita `gulpfile.js` línea 91 para cambiar el puerto:
-```javascript
-port: 3000  // Cambia a otro puerto
-```
+- **Inscripciones:** iframe de efluj con auto-resize (`https://efluj.com/embed.js`).
+  El script va junto al iframe, no en el `<head>`.
+- **Mapa:** embed de Google Maps en la sección "Cómo llegar".
+- **Mapas de circuito:** lightbox nativo con `<dialog>`, sin librerías.
 
-## 📝 Flujo de Trabajo
+## ⚠️ Pendientes antes de publicar
 
-1. **Inicia el servidor**: `npm start`
-2. **Edita** `assets/css/index.scss`
-3. **Los cambios se reflejan automáticamente** en el navegador
-4. **Antes de producción**: `npm run build` para generar archivos minificados
+- Guía técnica 2027: el botón está deshabilitado hasta tener el PDF.
+- Confirmar la URL de reglamento del evento 2027 en efluj
+  (`.../futangue-challenge-by-asics-2027/terms`, deducida por analogía).
+- Los tickets de efluj están en estado "Próximamente": se ven los precios pero no se puede comprar.
+- Falta analítica: el sitio anterior usaba Universal Analytics, discontinuado por Google en 2023.
+- `foto-web.jpg` mide 678×756; queda justa para la sección 01 en pantallas retina.
 
 ---
 
 **Desarrollado para Futangue Challenge** 🏃‍♂️⛰️
-
