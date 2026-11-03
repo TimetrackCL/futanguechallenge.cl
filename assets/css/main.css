@@ -556,37 +556,45 @@ body.is-locked { overflow: hidden; }
   display: block;
 }
 
-/* aliados — una sola fila; cada celda reparte el ancho por igual */
+/* aliados — ASICS a la izquierda; a la derecha VW arriba y 3 colaboradores
+   abajo, separados por líneas finas (estructura entregada por la marca) */
 .allies {
+  --ally-line: 1px solid rgba(39, 51, 55, .55);
   background: var(--cream);
   padding: 72px var(--pad-x);
-  display: flex;
-  align-items: flex-end;
-  gap: clamp(14px, 2.2vw, 32px);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.allies__side {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-left: var(--ally-line);
 }
 
 .ally {
-  flex: 1 1 0;
   min-width: 0;
   display: grid;
-  gap: 14px;
+  place-items: center;
+  padding: 18px clamp(12px, 2vw, 32px);
 }
-.ally__role {
-  margin: 0;
-  font: 600 11px var(--sans);
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: var(--green);
+.ally--main { padding-right: clamp(24px, 4vw, 64px); }
+.ally--top {
+  grid-column: 1 / -1;
+  border-bottom: var(--ally-line);
+  padding-top: 0;
 }
+.allies__side .ally:not(.ally--top) { padding-bottom: 0; }
+.allies__side .ally:not(.ally--top) + .ally { border-left: var(--ally-line); }
+
 .ally__logo {
   height: 58px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
-  object-position: left bottom;
-  justify-self: start;
   filter: grayscale(1) brightness(.3);
 }
+.ally--main .ally__logo { height: 130px; }
+.ally--top .ally__logo { height: 110px; }
 /* este SVG ya viene en #273337; el filtro de arriba (pensado para los logos
    blancos) lo dejaría casi negro, así que lo subimos al mismo gris del resto. */
 .ally__logo--ink { filter: grayscale(1) brightness(1.55); }
@@ -789,13 +797,18 @@ body.is-locked { overflow: hidden; }
   .place__info .btn { text-align: center; }
 
   /* aliados + footer */
+  /* móvil: ASICS arriba, luego el bloque de VW + colaboradores */
   .allies {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 20px;
+    grid-template-columns: 1fr;
     padding: 48px var(--pad-x);
   }
-  .ally__logo { height: 42px; }
+  .ally--main { padding: 0 0 18px; border-bottom: var(--ally-line); }
+  .allies__side { border-left: 0; }
+  .ally--top { padding-top: 18px; }
+  .allies__side .ally { padding-left: 8px; padding-right: 8px; }
+  .ally__logo { height: 40px; }
+  .ally--main .ally__logo { height: 84px; }
+  .ally--top .ally__logo { height: 76px; }
 
   .footer {
     display: grid;
